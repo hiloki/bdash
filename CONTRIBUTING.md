@@ -1,4 +1,4 @@
-Contributing to pagers
+Contributing
 ============================
 
 ## Git Commit Messages
