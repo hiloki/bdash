@@ -1,5 +1,7 @@
 # dashboard
 
+![Alt Text](http://i.giphy.com/oDDs67mo76beM.gif)
+
 Scalable, Maintainable and Responsible Dashboard Framework
 
 ## Documentation
