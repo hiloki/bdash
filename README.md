@@ -1,4 +1,4 @@
-# dashboard
+# Dashboard
 
 ![Alt Text](http://i.giphy.com/oDDs67mo76beM.gif)
 
