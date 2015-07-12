@@ -12,7 +12,9 @@ Scalable, Maintainable and Responsible Dashboard Style
 
 ## Contributing
 
+Contributions are very welcome!
 
+Please have a look at [CONTRIBUTING](CONTRIBUTING) for guidelines.
 
 ## License
 
