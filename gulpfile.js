@@ -1,4 +1,4 @@
-var psotcss = require('postcss')
+var postcss = require('postcss')
 var gulp    = require('gulp')
 
 gulp.task('style', function(){
@@ -9,6 +9,6 @@ gulp.task('style', function(){
       require('postcss-simple-vars'),
       require('postcss-import'),
       require('postcss-will-change'),
-      require('autoprefixer')
+      require('autoprefixer')({ browsers: ['last 1 versions'] })
     ])
 })
