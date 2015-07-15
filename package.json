@@ -1,0 +1,29 @@
+{
+  "name": "dashboard",
+  "version": "0.0.1",
+  "description": "![Alt Text](http://i.giphy.com/oDDs67mo76beM.gif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotayamashita/dashboard.git"
+  },
+  "author": "SIROK, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sotayamashita/dashboard/issues"
+  },
+  "homepage": "https://github.com/sotayamashita/dashboard#readme",
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "postcss": "^4.1.16",
+    "postcss-import": "^6.1.1",
+    "postcss-mixins": "^0.3.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-simple-vars": "^0.3.0",
+    "postcss-will-change": "^0.2.0",
+    "poststylus": "^0.2.0"
+  }
+}
