@@ -1,5 +1,6 @@
 var postcss = require('postcss')
 var gulp    = require('gulp')
+var size    = require('gulp-size')
 
 gulp.task('style', function(){
   return gulp.src('app/styles/main.scss')
@@ -11,4 +12,5 @@ gulp.task('style', function(){
       require('postcss-will-change'),
       require('autoprefixer')({ browsers: ['last 1 versions'] })
     ])
+    .pipe( gulp.size({title: 'styles'}) )
 })
