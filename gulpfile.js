@@ -12,6 +12,6 @@ gulp.task('style', function() {
       require('postcss-will-change'),
       require('autoprefixer')({ browsers: ['last 1 versions'] })
     ]) )
-    .pipe(size())
-    .pipe(gulp.dest('./dist'));
-});
+    .pipe( size({title: 'style'}) )
+    .pipe(gulp.dest('./dist'))
+})
