@@ -13,5 +13,5 @@ gulp.task('style', function() {
       require('autoprefixer')({ browsers: ['last 1 versions'] })
     ]) )
     .pipe(size())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./dist'));
 });
