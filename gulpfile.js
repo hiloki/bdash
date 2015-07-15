@@ -2,8 +2,18 @@ var postcss = require('postcss')
 var gulp    = require('gulp')
 var size    = require('gulp-size')
 
+
+var src     = __dirname + '/src/main/webapp'
+var config  = {
+  postcss: {
+    src:  src + '/postcss/main.css',
+    dist: src + '/css'
+  }
+}
+
+
 gulp.task('style', function(){
-  return gulp.src('app/styles/main.scss')
+  return gulp.src()
     .pipe( postcss([
       require('postcss-simple-vars'),
       require('postcss-mixins'),
