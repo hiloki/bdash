@@ -22,7 +22,7 @@ If you have any question or suggestion, please feel free to create issues or pul
 
 | Feature       | Chrome        | FireFox       | IE            | Edge         | Opera         |
 | ------------- | ------------- | ------------- | ------------- |------------- | ------------- |
-| Basic Support | 42            | 38            | 10            | pending      |  30           |
+| Basic Support | 34            | 30            | 10            | pending      |  23           |
 
 ## Contributing
 
