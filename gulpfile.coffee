@@ -13,7 +13,7 @@ gulp.task 'stylus', () ->
   gulp.src './stylus/main.styl'
     .pipe stylus({
       use: [
-        poststylus(['autoprefixer'])
+        poststylus([ 'autoprefixer' ])
       ]
     })
     .pipe size {title:  'stylus'}
