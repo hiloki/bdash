@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylus": "gulp style:stylus",
-    "min": "gulp style:min",
-    "stats": "gulp style:stats"
+    "stylus": "gulp stylus",
+    "min": "gulp min",
+    "stats": "gulp stats"
   },
   "repository": {
     "type": "git",

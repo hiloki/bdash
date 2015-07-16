@@ -29,7 +29,7 @@ gulp.task 'min', ->
 
 
 gulp.task 'stats', ->
-  gulp.src '.dist/main.css'
+  gulp.src './dist/main.css'
   .pipe postcss([
       cssstats (stats) ->
           console.log(stats)
