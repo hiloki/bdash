@@ -2,8 +2,8 @@
 .DS_Store                         # Thumbnails
 
 # IDE
-.idea                             # JetBrains
-.settings                         # Visual Studio Code
+.idea/                            # JetBrains
+.settings/                        # Visual Studio Code
 
 # Node
 node_modules
