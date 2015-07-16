@@ -10,7 +10,7 @@ autoprefixer = require 'autoprefixer'
 
 
 gulp.task 'stylus', ->
-  gulp.src './stylus/main.styl'
+  gulp.src './stylus/bdash.styl'
   .pipe stylus({
     use: [
       poststylus([ 'autoprefixer' ])
@@ -21,7 +21,7 @@ gulp.task 'stylus', ->
 
 
 gulp.task 'min', ->
-  gulp.src './dist/main.css'
+  gulp.src './dist/bdash.css'
   .pipe minify()
   .pipe rename {suffix: '.min'}
   .pipe size {title: 'min'}
@@ -29,7 +29,7 @@ gulp.task 'min', ->
 
 
 gulp.task 'stats', ->
-  gulp.src './dist/main.css'
+  gulp.src './dist/bdash.css'
   .pipe postcss([
       cssstats (stats) ->
           console.log(stats)
