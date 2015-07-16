@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "gulp style",
-    "minify": "gulp minify"
+    "stylus": "gulp style:stylus",
+    "minify": "gulp style:minify",
+    "stats": "gulp style:stats"
   },
   "repository": {
     "type": "git",
@@ -21,16 +22,19 @@
   "devDependencies": {
     "autoprefixer": "^5.2.0",
     "coffee-script": "^1.9.3",
-    "cssnano": "^2.1.0",
     "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.0",
     "gulp-postcss": "^5.1.9",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^1.2.3",
+    "gulp-stylus": "^2.0.5",
     "postcss": "^4.1.16",
+    "postcss-cssstats": "^1.0.0",
     "postcss-import": "^6.1.1",
     "postcss-mixins": "^0.3.0",
     "postcss-nested": "^0.3.2",
     "postcss-simple-vars": "^0.3.0",
-    "postcss-will-change": "^0.2.0"
+    "postcss-will-change": "^0.2.0",
+    "poststylus": "^0.2.0"
   }
 }

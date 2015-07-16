@@ -1,24 +1,36 @@
-gulp    = require('gulp');
-size    = require('gulp-size');
-postcss = require('gulp-postcss');
+gulp         = require('gulp');
+size         = require('gulp-size')
+postcss      = require('gulp-postcss')
+stylus       = require('gulp-stylus')
+rename       = require("gulp-rename")
+poststylus   = require('poststylus')
+minify       = require('gulp-minify-css')
+cssstats     = require('postcss-cssstats')
+autoprefixer = require('autoprefixer')
 
-gulp.task 'style', () ->
-  gulp.src './postcss/main.css'
+
+gulp.task 'style:stylus', () ->
+  gulp.src './stylus/main.styl'
+    .pipe stylus({
+      use: [
+        poststylus(['autoprefixer'])
+      ]
+    })
+    .pipe size {title:  'stylus'}
+    .pipe gulp.dest './dist'
+
+
+gulp.task 'style:minify', () ->
+  gulp.src './dist/main.css'
+    .pipe minify()
+    .pipe rename {suffix: '.min'}
+    .pipe size   {title:  'minify'}
+    .pipe gulp.dest './dist'
+
+
+gulp.task 'style:stats', ()->
+  gulp.src '.dist/main.css'
     .pipe postcss([
-      require('postcss-simple-vars'),
-      require('postcss-mixins'),
-      require('postcss-nested'),
-      require('postcss-import'),
-      require('postcss-will-change'),
-      require('autoprefixer')({ browsers: ['last 2 versions'] })
-    ])
-    .pipe size({title: 'style'})
-    .pipe gulp.dest('./dist')
-
-gulp.task 'minify', () ->
-  rename = require("gulp-rename");
-  gulp.src('./dist/main.css')
-    .pipe postcss([ require('cssnano')() ])
-    .pipe rename({ extname: '.min.css'})
-    .pipe size({title: 'minify'})
-    .pipe gulp.dest('./dist')
+            cssstats (stats) ->
+              console.log(stats)
+            ])
