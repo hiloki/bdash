@@ -1,5 +1,7 @@
 # bdash
 
+[![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![npm](https://img.shields.io/npm/v/bdash.svg)](https://github.com/sotayamashita/bdash) [![Bower](https://img.shields.io/bower/v/bdash.svg)](https://github.com/sotayamashita/bdash)
 
 ![Alt Text](http://i.giphy.com/oDDs67mo76beM.gif)
