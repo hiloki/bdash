@@ -1,15 +1,15 @@
-gulp = require('gulp')
-size = require('gulp-size')
-postcss = require('gulp-postcss')
-stylus = require('gulp-stylus')
-rename = require("gulp-rename")
-poststylus = require('poststylus')
-minify = require('gulp-minify-css')
-cssstats = require('postcss-cssstats')
-autoprefixer = require('autoprefixer')
+gulp = require 'gulp'
+size = require 'gulp-size'
+postcss = require 'gulp-postcss'
+stylus = require 'gulp-stylus'
+rename = require 'gulp-rename'
+poststylus = require 'poststylus'
+minify = require 'gulp-minify-css'
+cssstats = require 'postcss-cssstats'
+autoprefixer = require 'autoprefixer'
 
 
-gulp.task 'stylus', () ->
+gulp.task 'stylus', ->
   gulp.src './stylus/main.styl'
   .pipe stylus({
     use: [
@@ -20,7 +20,7 @@ gulp.task 'stylus', () ->
   .pipe gulp.dest './dist'
 
 
-gulp.task 'min', () ->
+gulp.task 'min', ->
   gulp.src './dist/main.css'
   .pipe minify()
   .pipe rename {suffix: '.min'}
@@ -28,7 +28,7 @@ gulp.task 'min', () ->
   .pipe gulp.dest './dist'
 
 
-gulp.task 'stats', () ->
+gulp.task 'stats', ->
   gulp.src '.dist/main.css'
   .pipe postcss([
       cssstats (stats) ->
