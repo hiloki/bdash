@@ -1,0 +1,23 @@
+{
+  "name": "bdash",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sotayamashita/bdash",
+  "authors": [
+    "Sota Yamashita <sota.yamashita@gmail.com>"
+  ],
+  "description": "the base coat of SIROK",
+  "keywords": [
+    "SIROK",
+    "css",
+    "ui",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
