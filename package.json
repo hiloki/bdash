@@ -1,8 +1,7 @@
 {
-  "name": "dashboard",
+  "name": "bdash",
   "version": "0.0.1",
-  "description": "![Alt Text](http://i.giphy.com/oDDs67mo76beM.gif)",
-  "main": "index.js",
+  "description": "the base coat of SIROK",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "stylus": "gulp stylus",
@@ -13,6 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/sotayamashita/dashboard.git"
   },
+    "keywords": [
+    "SIROK",
+    "css",
+    "ui",
+    "dashboard"
+  ],
   "author": "SIROK, Inc.",
   "license": "MIT",
   "bugs": {
