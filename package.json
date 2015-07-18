@@ -34,5 +34,8 @@
     "gulp-size": "^1.2.3",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.5"
-  }
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
 }
