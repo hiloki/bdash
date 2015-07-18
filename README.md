@@ -37,7 +37,7 @@ Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTIN
 
 [MIT][mit] © SIROK, Inc. 2015.
 
-[mit]:            http://opensource.org/licenses/MIT
+[mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
 [mit-badge]:    https://img.shields.io/github/license/sotayamashita/bdash.svg?style=flat-square
 [releases]:       https://github.com/sotayamashita/bdash/releases
 [npm-pkg-link]:   https://www.npmjs.org/package/bdash
