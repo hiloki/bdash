@@ -22,6 +22,7 @@ AUTOPREFIXER_BROWSERS = [
 # Transpile and Automatically Prefix Stylesheets
 gulp.task 'stylus', ->
   gulp.src './stylus/bdash.styl'
+  .pipe $.changed('./stylus', {extension: '.styl'})
   .pipe $.sourcemaps.init()
   .pipe $.stylus()
   .pipe $.csscomb()
