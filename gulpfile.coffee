@@ -1,36 +1,40 @@
+'use strict'
+
+
+# Include Gulp libraries
 gulp = require 'gulp'
-size = require 'gulp-size'
-postcss = require 'gulp-postcss'
-stylus = require 'gulp-stylus'
-rename = require 'gulp-rename'
-poststylus = require 'poststylus'
-minify = require 'gulp-minify-css'
-cssstats = require 'postcss-cssstats'
-autoprefixer = require 'autoprefixer'
+$ = require('gulp-load-plugins')();
 
 
+AUTOPREFIXER_BROWSERS = [
+  'ie >= 10',
+  'ie_mob >= 10',
+  'ff >= 30',
+  'chrome >= 34',
+  'safari >= 7',
+  'opera >= 23',
+  'ios >= 7',
+  'android >= 4.4',
+  'bb >= 10'
+]
+
+
+# Transpile and Automatically Prefix Stylesheets
 gulp.task 'stylus', ->
   gulp.src './stylus/bdash.styl'
-  .pipe stylus({
-    use: [
-      poststylus([ 'autoprefixer' ])
-    ]
-  })
-  .pipe size {title:  'stylus'}
+  .pipe $.sourcemaps.init()
+  .pipe $.stylus()
+  .pipe $.csscomb()
+  .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
+  .pipe $.sourcemaps.write('.')
+  .pipe $.size {title:  'stylus'}
   .pipe gulp.dest './dist'
 
 
+# Minify Stylesheets
 gulp.task 'min', ->
   gulp.src './dist/bdash.css'
   .pipe minify()
   .pipe rename {suffix: '.min'}
   .pipe size {title: 'min'}
   .pipe gulp.dest './dist'
-
-
-gulp.task 'stats', ->
-  gulp.src './dist/bdash.css'
-  .pipe postcss([
-      cssstats (stats) ->
-          console.log(stats)
-      ])
