@@ -7,11 +7,23 @@
 [![][dl-badge]][npm-pkg-link]
 [![][mit-badge]][mit]
 
-## Install
+## Getting Started
+
+### Build
+
+To get started modifying the components or the docs, first install the necessary dependencies, from the root of the project:
 
 ```bash
-$ npm install --save-dev bdash
+$ npm install
 ```
+
+To build a production version of the components, run:
+
+```
+$ npm run build
+```
+
+This will clean the `dist` folder and rebuild the assets.
 
 ## Documentation
 
