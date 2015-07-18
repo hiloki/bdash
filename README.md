@@ -34,6 +34,11 @@ $ npm run build
 
 This will clean the `dist` folder and rebuild the assets.
 
+### What's included
+
+* dist/bdash.css
+* dist/bdash.min.css
+
 ## Documentation
 
 At this stage, docs is located in [Wiki](https://github.com/sotayamashita/bdash/wiki). I am taking note to go through the process of this and understand reasons for selecting technique.
