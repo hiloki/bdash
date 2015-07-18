@@ -23,7 +23,7 @@
 To get started modifying the components or the docs, first install the necessary dependencies, from the root of the project:
 
 ```bash
-$ npm install
+$ npm install && sudo gem install hologram
 ```
 
 To build a production version of the components, run:
