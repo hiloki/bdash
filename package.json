@@ -35,6 +35,7 @@
     "url": "git+https://github.com/sotayamashita/bdash.git"
   },
   "scripts": {
+    "build": "gulp",
     "min": "gulp min",
     "stylus": "gulp stylus",
     "styleguide": "gulp styleguide",
