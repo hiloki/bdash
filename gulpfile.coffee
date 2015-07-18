@@ -40,7 +40,7 @@ gulp.task 'styleguide', ->
   hologramConfig  = './hologram_config.yml';
   hologramOptions = {
     logging: true,
-    bundler: true
+    bundler: false
   }
 
   gulp.src hologramConfig
