@@ -23,12 +23,12 @@
 To get started modifying the components or the docs, first install the necessary dependencies, from the root of the project:
 
 ```bash
-$ npm install && sudo gem install hologram
+$ npm install
 ```
 
 To build a production version of the components, run:
 
-```
+```bash
 $ npm run build
 ```
 
@@ -40,6 +40,14 @@ This will clean the `dist` folder and rebuild the assets.
 * dist/bdash.min.css
 
 ## Documentation
+
+### Build Style Guide
+
+```bash
+$ sudo gem install hologram
+```
+
+### Wiki
 
 At this stage, docs is located in [Wiki](https://github.com/sotayamashita/bdash/wiki). I am taking note to go through the process of this and understand reasons for selecting technique.
 
