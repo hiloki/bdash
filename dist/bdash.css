@@ -1,0 +1,12 @@
+[am-button]
+{
+    position: relative;
+
+    cursor: pointer;
+}
+[am-button~='round']
+{
+    border-radius: brand-round;
+}
+
+/*# sourceMappingURL=bdash.css.map */
