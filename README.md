@@ -18,11 +18,11 @@ At this stage, docs is located in [Wiki](https://github.com/sotayamashita/bdash/
 
 If you have any question or suggestion, please feel free to create issues or pull request. When you create issues or pull request, please read [Contributin](#contributing) before.
 
-## Browser compatibility
+## Browser Support
 
-| Feature       | Chrome        | FireFox       | IE            | Edge         | Opera         |
-| ------------- | ------------- | ------------- | ------------- |------------- | ------------- |
-| Basic Support | 34            | 30            | 10            | pending      |  23           |
+| Feature       | Chrome        | FireFox       | IE            |  Opera         |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Basic Support | 34            | 30            | 10            |  23           |
 
 ## Contributing
 
@@ -33,4 +33,3 @@ Please have a look at [CONTRIBUTING](CONTRIBUTING) for guidelines.
 ## License
 
 MIT © Sota Yamashita
-
