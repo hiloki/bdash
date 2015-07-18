@@ -31,7 +31,7 @@ At this stage, docs is located in [Wiki](https://github.com/sotayamashita/bdash/
 
 If you have any question or suggestion, please feel free to create issues or pull request. When you create issues or pull request, please read [Contributin](#contributing) before.
 
-## Browser Support
+## Browser Compatibility
 
 | Feature       | Chrome        | FireFox       | IE            |  Opera         |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
