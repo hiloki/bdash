@@ -37,5 +37,11 @@ gulp.task 'min', ->
 
 # Generate Style guides
 gulp.task 'styleguide', ->
-  gulp.src './config.yml'
-  .pipe $.hologram {logging: true}
+  hologramConfig  = './hologram_config.yml';
+  hologramOptions = {
+    logging: true,
+    bundler: true
+  }
+
+  gulp.src hologramConfig
+  .pipe $.hologram hologramOptions
