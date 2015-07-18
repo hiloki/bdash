@@ -7,6 +7,15 @@
 [![][dl-badge]][npm-pkg-link]
 [![][mit-badge]][mit]
 
+## Table of contents
+
+* [Getting Started](#getting-started)
+* [Documentation](#documentation)
+* [Browser Compatibility](#browser-compatibility)
+* [Contributing](#contributing)
+* [Versioning](#versioning)
+* [License](#license)
+
 ## Getting Started
 
 ### Build
@@ -37,13 +46,13 @@ If you have any question or suggestion, please feel free to create issues or pul
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Basic Support | 34            | 30            | 10            |  23           |
 
-## Versioning
-
-For transparency into our release cycle and in striving to maintain backward compatibility, IT is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
-
 ## Contributing
 
 Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING) for guidelines.
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility, IT is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
 
 ## License
 
