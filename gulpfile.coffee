@@ -34,7 +34,7 @@ gulp.task 'stylus', ->
 # Minify Stylesheets
 gulp.task 'min', ->
   gulp.src './dist/bdash.css'
-  .pipe minify()
-  .pipe rename {suffix: '.min'}
-  .pipe size {title: 'min'}
+  .pipe $.minifyCss()
+  .pipe $.rename {suffix: '.min'}
+  .pipe $.size {title: 'min'}
   .pipe gulp.dest './dist'
