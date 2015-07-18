@@ -18,7 +18,7 @@ AUTOPREFIXER_BROWSERS = [
 # Transpile and Automatically Prefix Stylesheets
 gulp.task 'stylus', ->
   gulp.src './stylus/bdash.styl'
-  .pipe $.changed('./stylus', {extension: '.styl'})
+  # .pipe $.changed('./stylus', {extension: '.styl'})
   .pipe $.sourcemaps.init()
   .pipe $.stylus()
   .pipe $.csscomb()
@@ -42,6 +42,8 @@ gulp.task 'styleguide', ->
     logging: true,
     bundler: false
   }
-
   gulp.src hologramConfig
   .pipe $.hologram hologramOptions
+
+# Generate Style guides
+gulp.task 'default', ['stylus', 'min']
