@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sotayamashita/dashboard.git"
+    "url": "git+https://github.com/sotayamashita/bdash.git"
   },
   "keywords": [
     "SIROK",
@@ -19,9 +19,9 @@
   "author": "SIROK, Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sotayamashita/dashboard/issues"
+    "url": "https://github.com/sotayamashita/bdash/issues"
   },
-  "homepage": "https://github.com/sotayamashita/dashboard#readme",
+  "homepage": "https://github.com/sotayamashita/bdash#readme",
   "devDependencies": {
     "coffee-script": "^1.9.3",
     "gulp": "^3.9.0",
