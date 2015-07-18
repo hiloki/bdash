@@ -1,10 +1,7 @@
 'use strict'
-
-
 # Include Gulp libraries
 gulp = require 'gulp'
-$ = require('gulp-load-plugins')();
-
+$ = require('gulp-load-plugins')()
 
 AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -18,7 +15,6 @@ AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ]
 
-
 # Transpile and Automatically Prefix Stylesheets
 gulp.task 'stylus', ->
   gulp.src './stylus/bdash.styl'
@@ -31,7 +27,6 @@ gulp.task 'stylus', ->
   .pipe $.size {title:  'stylus'}
   .pipe gulp.dest './dist'
 
-
 # Minify Stylesheets
 gulp.task 'min', ->
   gulp.src './dist/bdash.css'
@@ -39,3 +34,8 @@ gulp.task 'min', ->
   .pipe $.rename {suffix: '.min'}
   .pipe $.size {title: 'min'}
   .pipe gulp.dest './dist'
+
+# Generate Style guides
+gulp.task 'styleguide', ->
+  gulp.src './config.yml'
+  .pipe $.hologram {logging: true}
