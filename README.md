@@ -43,6 +43,7 @@ Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTIN
 
 [mit]:          http://opensource.org/licenses/MIT
 [mit-badge]:    https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
+[releases]:     https://github.com/sotayamashita/bdash/releases
 [npm-pkg-link]: https://www.npmjs.org/package/bdash
 [npm-ver-link]: https://img.shields.io/npm/v/bdash.svg?style=flat-square
 [dl-badge]:     http://img.shields.io/npm/dm/bdash.svg?style=flat-square
