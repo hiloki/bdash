@@ -1,6 +1,11 @@
 # bdash
 
-[![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![npm](https://img.shields.io/npm/v/bdash.svg)](https://github.com/sotayamashita/bdash) [![Bower](https://img.shields.io/bower/v/bdash.svg)](https://github.com/sotayamashita/bdash)
+> The CSS toolkit of SIROK, Inc.
+
+[![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge?style=flat-square)
+[![npm package][npm-ver-link]][releases]
+[![][dl-badge]][npm-pkg-link]
+[![][mit-badge]][mit]
 
 ![Alt Text](http://i.giphy.com/oDDs67mo76beM.gif)
 
@@ -34,4 +39,10 @@ Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTIN
 
 ## License
 
-MIT © SIROK, Inc. 2015.
+[MIT][mit] © SIROK, Inc. 2015.
+
+[mit]:          http://opensource.org/licenses/MIT
+[mit-badge]:    https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
+[npm-pkg-link]: https://www.npmjs.org/package/bdash
+[npm-ver-link]: https://img.shields.io/npm/v/bdash.svg?style=flat-square
+[dl-badge]:     http://img.shields.io/npm/dm/bdash.svg?style=flat-square
