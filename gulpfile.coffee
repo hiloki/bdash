@@ -45,5 +45,9 @@ gulp.task 'styleguide', ->
   gulp.src hologramConfig
   .pipe $.hologram hologramOptions
 
+gulp.task 'deploy', ->
+  gulp.src('./docs/')
+  .pipe $ghPages()
+
 # Generate Style guides
-gulp.task 'default', ['stylus', 'min']
+gulp.task 'default', ['stylus', 'min', 'deploy']
