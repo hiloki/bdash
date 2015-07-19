@@ -1,15 +1,147 @@
-/**
- * ## Button
- *
-   ```html
-   <a href="#" am-button>Cart</a>
-   ```
- *
- */
+/*doc
+---
+title: Buttons
+name: button
+category: Base CSS
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+```html_example
+<button am-button>Default</button>
+
+<button am-button='soft'>Soft</button>
+<button am-button='hard'>Hard</button>
+```
+
+*/
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
 [am-button]
+  display: inline-block;
+  font-family: inherit
   position: relative
   cursor: pointer
-
-
-[am-button~="round"]
+  text-decoration: none
+  white-space: nowrap
+  vertical-align: middle
+  margin: 0
+  padding: 9px 15px
   border-radius: brand-round
+  user-select: none
+  appearance: none
+  border: none
+  box-shadow: none
+  font-size: 11px
+  letter-spacing: .1em
+
+[am-button]
+  &,
+  &:hover
+    text-decoration: none
+  &:active,
+  &:focus
+    outline:none
+
+// Outlined
+[am-button~="solid"]
+  background: #fff
+  border: 1px solid brand-color
+  color: brand-color
+  transition: background, color, 0.2s
+  &:hover
+    background: brand-color
+    color: #fff
+
+// Fill
+[am-button~="fill"]
+  background: brand-color
+  border: 1px solid brand-color
+  color: #fff
+  transition: opacity 0.2s
+  &:hover
+    opacity: .8
+
+
+
+
+
+/*------------------------------------*\
+    $SIZES
+\*------------------------------------*/
+// [am-button~="small"]
+
+// [am-button~="large"]
+
+// [am-button~="huge"]
+
+
+
+
+
+/*------------------------------------*\
+    $FUNCTIONS
+\*------------------------------------*/
+button-default-color = #d5d5d5
+button-primary-color = #337ab7
+button-success-color = #5cb85c
+button-danger-color  = #d9534f
+
+[am-button~="default fill"]
+  background: button-default-color
+  border: 1px solid button-default-color
+
+[am-button~="default solid"]
+  color: button-default-color
+  border: 1px solid button-default-color
+  &:hover
+    background: button-default-color
+
+
+[am-button~="primary fill"]
+  background: button-primary-color
+  border: 1px solid button-primary-color
+
+[am-button~="primary solid"]
+  color: button-primary-color
+  border: 1px solid button-primary-color
+  &:hover
+    background: button-primary-color
+
+
+[am-button~="success fill"]
+  background: button-success-color
+  border: 1px solid button-success-color
+
+[am-button~="success solid"]
+  color: button-success-color
+  border: 1px solid button-success-color
+  &:hover
+    background: button-success-color
+
+
+[am-button~="danger fill"]
+  background: button-danger-color
+  border: 1px solid button-danger-color
+
+[am-button~="danger solid"]
+  color: button-danger-color
+  border: 1px solid button-danger-color
+  &:hover
+    background: button-danger-color
+
+
+
+
+
+/*------------------------------------*\
+    $STYLES
+\*------------------------------------*/
+// Ellipse
+[am-button~="soft"]
+  border-radius: 200px
+
+// Square
+[am-button~="hard"]
+  border-radius: 0
