@@ -25,15 +25,15 @@ gulp.task 'stylus', ->
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
   .pipe $.sourcemaps.write('.')
   .pipe $.size {title:  'stylus'}
-  .pipe gulp.dest './dist'
+  .pipe gulp.dest './css'
 
 # Minify Stylesheets
 gulp.task 'min', ->
-  gulp.src './dist/bdash.css'
+  gulp.src './css/bdash.css'
   .pipe $.minifyCss()
   .pipe $.rename {suffix: '.min'}
   .pipe $.size {title: 'min'}
-  .pipe gulp.dest './dist'
+  .pipe gulp.dest './css'
 
 # Generate Style guides
 gulp.task 'styleguide', ->
