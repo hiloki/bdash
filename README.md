@@ -17,7 +17,6 @@ bdash is CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by G
 * [Usage](#usage)
 * [Documentation](#documentation)
 * [Updating](#updating)
-* [Development](#development)
 * [Browser Compatibility](#browser-compatibility)
 * [Contributing](#contributing)
 * [Versioning](#versioning)
@@ -84,8 +83,6 @@ Update all dependencies:
 ```bash
 $ bower update
 ```
-
-## Development
 
 ## Browser Compatibility
 
