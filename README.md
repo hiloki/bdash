@@ -33,7 +33,7 @@ $ bower install bdash --save
 
 Import files you would like to use in your project with `@import` below:
 
-```css
+```stylus
 // Example: All files
 @import "bdash/stylus/bdash"
 
