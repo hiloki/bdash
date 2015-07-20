@@ -3,8 +3,6 @@ Contributing
 
 ## Git Commit Messages
 
-Note: This **Git Commit Messages** was taken from by [atom/atom/CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md) because it is amazing. Thanks to atom project.
-
 * Use the present tense ("Add feature" not "Added feature")
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 * Limit the first line to 72 characters or less
@@ -23,3 +21,10 @@ Note: This **Git Commit Messages** was taken from by [atom/atom/CONTRIBUTING.md]
     * :white_check_mark: `:white_check_mark:` when adding tests
     * :lock: `:lock:` when dealing with security
     * :arrow_up: `:arrow_up:` when upgrading dependencies
+
+**Acknowledgement**
+
+Inspiration and idea was taken from many sources, including:
+
+* [atom/CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+* [Writing good commit messages](https://github.com/erlang/otp/wiki/Writing-good-commit-messages)
