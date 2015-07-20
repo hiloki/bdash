@@ -22,7 +22,7 @@ Contributing
     * :lock: `:lock:` when dealing with security
     * :arrow_up: `:arrow_up:` when upgrading dependencies
 
-**Acknowledgement**
+## Acknowledgement
 
 Inspiration and idea was taken from many sources, including:
 
