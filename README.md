@@ -94,7 +94,7 @@ $ bower update
 
 ## Contributing
 
-Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING) for guidelines.
+Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
 
 ## Versioning
 
