@@ -1,6 +1,11 @@
 Contributing
 ============================
 
+1. Fork & clone this porject
+2. Create a topic branch from `develop` branch
+3. :sparkles: Happy hacking 
+4. Send a pull request
+
 ## Git Commit Messages
 
 **DO**
