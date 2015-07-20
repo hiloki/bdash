@@ -7,6 +7,8 @@
 [![][dl-badge]][npm-pkg-link]
 [![][mit-badge]][mit]
 
+bdash is CSS toolkit of SIROK, Inc. It is very inspired by [primer][primer] by GitHub. It aims to make our development be fast and maintanable.
+
 ## Table of contents
 
 * [Install](#install)
@@ -96,8 +98,9 @@ For transparency into our release cycle and in striving to maintain backward com
 [MIT][mit] © SIROK, Inc. 2015.
 
 [mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
-[mit-badge]:    https://img.shields.io/github/license/sotayamashita/bdash.svg?style=flat-square
+[mit-badge]:      https://img.shields.io/github/license/sotayamashita/bdash.svg?style=flat-square
 [releases]:       https://github.com/sotayamashita/bdash/releases
 [npm-pkg-link]:   https://www.npmjs.org/package/bdash
 [npm-ver-link]:   https://img.shields.io/npm/v/bdash.svg?style=flat-square
 [dl-badge]:       http://img.shields.io/npm/dm/bdash.svg?style=flat-square
+[primer]:         https://github.com/primer/primer
