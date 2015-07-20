@@ -31,13 +31,13 @@ $ bower install bdash --save
 
 **Stylus**
 
-Import files you would like to use in your project with `@import`:
+Import files you would like to use in your project with `@import` below:
 
 ```css
 // Example: All files
 @import "bdash/stylus/bdash"
 
-// Exameple: Individual Files
+// Exameple: Individual file
 @import "bdash/stylus/_sanitize"
 @import "bdash/stylus/_base"
 @import "bdash/stylus/_buttons"
@@ -45,7 +45,7 @@ Import files you would like to use in your project with `@import`:
 
 **CSS**
 
-In html, add link:
+In html, add link below:
 
 ```html
 <link rel="dist/bdash.min.css" rel="stylesheet">
