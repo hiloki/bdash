@@ -9,7 +9,7 @@
 
 bdash is CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. It aims to make our development be fast and maintanable.
 
-:v: We love Open Source more than GitHub. :grin: We also always welcome your suggestion but it is our internal CSS toolkit so we can not add new features we do not use in product but we think seriously about your suggesiton. If your suggesiton is considering exisiting code, it will be better. Thanks in advance. Lean more about [CONTRIBUTION](#contributing)
+ **We love Open Source**. :grin: :v: We also always welcome your suggestion but it is our internal CSS toolkit so we can not add new features we do not use in product but we think seriously about your suggesiton. If your suggesiton is considering exisiting code, it will be better. Thanks in advance. Lean more about [CONTRIBUTING](#contributing)
 
 ## Table of contents
 
