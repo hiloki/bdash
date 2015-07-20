@@ -46,7 +46,7 @@ This will clean the `dist` folder and rebuild the assets.
 Install hologram:
 
 ```bash
-$ bundle install
+$ bundle
 ```
 
 Generate style guide:
