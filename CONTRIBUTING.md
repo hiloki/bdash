@@ -3,6 +3,8 @@ Contributing
 
 ## Git Commit Messages
 
+**DO**
+
 * Use the present tense ("Add feature" not "Added feature")
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 * Limit the first line to 72 characters or less
@@ -21,6 +23,10 @@ Contributing
     * :white_check_mark: `:white_check_mark:` when adding tests
     * :lock: `:lock:` when dealing with security
     * :arrow_up: `:arrow_up:` when upgrading dependencies
+
+**DON'T**
+
+* Don't end the summary line with a period
 
 ## Acknowledgement
 
