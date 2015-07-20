@@ -43,8 +43,16 @@ This will clean the `dist` folder and rebuild the assets.
 
 **Style Guide**
 
+Install hologram:
+
 ```bash
 $ bundle install
+```
+
+Generate style guide:
+
+```bash
+$ npm run styleguide
 ```
 
 **Wiki**
