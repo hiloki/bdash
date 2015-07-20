@@ -9,35 +9,47 @@
 
 ## Table of contents
 
-* [Getting Started](#getting-started)
+* [Install](#install)
+* [Usage](#usage)
 * [Documentation](#documentation)
 * [Browser Compatibility](#browser-compatibility)
+* [Updating](#updating)
+* [Development](#development)
 * [Contributing](#contributing)
 * [Versioning](#versioning)
 * [License](#license)
 
-## Getting Started
+## Install
 
-**Build**
+**Bower**
 
-To get started modifying the components or the docs, first install the necessary dependencies, from the root of the project:
-
-```bash
-$ npm install
+```
+$ bower install bdash --save
 ```
 
-To build a production version of the components, run:
+## Usage
 
-```bash
-$ npm run build
+**Stylus**
+
+Import files you would like to use in your project with `@import`:
+
+```css
+// Example: All files
+@import "bdash/stylus/bdash"
+
+// Exameple: Individual Files
+@import "bdash/stylus/_sanitize"
+@import "bdash/stylus/_base"
+@import "bdash/stylus/_buttons"
 ```
 
-This will clean the `dist` folder and rebuild the assets.
+**CSS**
 
-**What's included**
+In html, add link:
 
-* dist/bdash.css
-* dist/bdash.min.css
+```html
+<link rel="dist/bdash.min.css" rel="stylesheet">
+```
 
 ## Documentation
 
@@ -66,6 +78,10 @@ If you have any question or suggestion, please feel free to create issues or pul
 | Feature       | Chrome        | FireFox       | IE            |  Opera         |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Basic Support | 34            | 30            | 10            |  23           |
+
+## Updating
+
+## Development
 
 ## Contributing
 
