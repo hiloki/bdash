@@ -16,9 +16,9 @@ bdash is CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by G
 * [Install](#install)
 * [Usage](#usage)
 * [Documentation](#documentation)
-* [Browser Compatibility](#browser-compatibility)
 * [Updating](#updating)
 * [Development](#development)
+* [Browser Compatibility](#browser-compatibility)
 * [Contributing](#contributing)
 * [Versioning](#versioning)
 * [License](#license)
@@ -77,12 +77,6 @@ At this stage, docs is located in [Wiki](https://github.com/sotayamashita/bdash/
 
 If you have any question or suggestion, please feel free to create issues or pull request. When you create issues or pull request, please read [Contributin](#contributing) before.
 
-## Browser Compatibility
-
-| Feature       | Chrome        | FireFox       | IE            |  Opera         |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| Basic Support | 34            | 30            | 10            |  23           |
-
 ## Updating
 
 Update all dependencies:
@@ -92,6 +86,12 @@ $ bower update
 ```
 
 ## Development
+
+## Browser Compatibility
+
+| Feature       | Chrome        | FireFox       | IE            |  Opera         |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Basic Support | 34            | 30            | 10            |  23           |
 
 ## Contributing
 
