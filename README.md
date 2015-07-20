@@ -85,6 +85,12 @@ If you have any question or suggestion, please feel free to create issues or pul
 
 ## Updating
 
+Update all dependencies:
+
+```bash
+$ bower update
+```
+
 ## Development
 
 ## Contributing
