@@ -1,17 +1,12 @@
 /*doc
 ---
 title: Buttons
-name: button
-category: Base CSS
+name: Base Button
+category: buttons
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
 ```html_example
-<button am-button>Default</button>
-
-<button am-button='soft'>Soft</button>
-<button am-button='hard'>Hard</button>
+<button am-button>Base Button</button>
 ```
 
 */
@@ -44,7 +39,24 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   &:focus
     outline:none
 
-// Outlined
+
+
+
+
+/*doc
+---
+title: Buttons
+name: Outlined and Solid
+category: buttons
+---
+
+
+```html_example
+<button am-butto="solid">Solid Button</button>
+<button am-butto="fill">Fill Button</button>
+```
+
+*/
 [am-button~="solid"]
   background: #fff
   border: 1px solid brand-color
@@ -67,19 +79,44 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 
-/*------------------------------------*\
-    $SIZES
-\*------------------------------------*/
-// [am-button~="small"]
-
-// [am-button~="large"]
-
-// [am-button~="huge"]
 
 
 
 
 
+
+/*doc
+---
+title: Buttons
+name: Solid Functions
+category: buttons
+---
+
+
+```html_example
+<button am-butto="default solid">Default</button>
+<button am-butto="primary solid">Primary</button>
+<button am-butto="success solid">Success</button>
+<button am-butto="danger solid">Success</button>
+```
+
+*/
+/*doc
+---
+title: Buttons
+name: Fill Functions
+category: buttons
+---
+
+
+```html_example
+<button am-butto="default fill">Default</button>
+<button am-butto="primary fill">Primary</button>
+<button am-butto="success fill">Success</button>
+<button am-butto="danger fill">Success</button>
+```
+
+*/
 /*------------------------------------*\
     $FUNCTIONS
 \*------------------------------------*/
@@ -134,7 +171,20 @@ button-danger-color  = #d9534f
 
 
 
+/*doc
+---
+title: Buttons
+name: Style
+category: buttons
+---
 
+
+```html_example
+<button am-butto="soft">Soft</button>
+<button am-butto="hard">Hrd</button>
+```
+
+*/
 /*------------------------------------*\
     $STYLES
 \*------------------------------------*/
