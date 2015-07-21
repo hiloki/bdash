@@ -3,7 +3,6 @@
 > The CSS toolkit of SIROK, Inc.
 
 [![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![Wercker][wercker-badge]][releases]
 [![bower package][bower-badge]][releases]
 [![npm package][npm-badge]][releases] 
