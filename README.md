@@ -4,7 +4,7 @@
 
 [![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Wercker][wrecker-badge]][releases]
+[![Wercker][wercker-badge]][releases]
 [![bower package][bower-badge]][releases]
 [![npm package][npm-badge]][releases] 
 [![][mit-badge]][mit]
