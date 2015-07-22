@@ -40,7 +40,6 @@
     "min": "gulp min",
     "deploy": "gulp deploy",
     "stylus": "gulp stylus",
-    "styleguide": "gulp styleguide",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
