@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "coffee-script": "^1.9.3",
+    "critical": "^0.6.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-changed": "^1.2.1",
