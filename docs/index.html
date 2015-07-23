@@ -2,22 +2,43 @@
 layout: default
 ---
 
-<div class="home">
+<h1 class="sg-h1">Styleguide Template</h1>
 
-  <h1 class="page-heading">Posts</h1>
+<p>Boilerplate for creating components based style guides using <a href="http://jekyllrb.com">Jekyll</a>. Here is the <a href="https://github.com/jeromecoupe/jekyllstyleguide">Github repository</a> for it, should you want to have a peek at the code, fork it or report an issue.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% assign entries = site.components %}
+{% for entry in entries %}
+  {% include component.html %}
+{% endfor %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+{% comment %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+If you want to make sure your types are grouped (file names are not enough), you could use this group_by loop instead
 
-</div>
+{% assign componentsByType = site.components | group_by:"type" %}
+{% for type in componentsByType %}
+  <h3 class="sg-h2">{{ type.name | capitalize }}</h3>
+  {% for entry in type.items %}
+    {% include component.html %}
+  {% endfor %}
+{% endfor %}
+
+{% endcomment %}
+
+
+
+{% comment %}
+
+If you want to use pages and/or posts to create a more comple styleguide with pages / intros for every type of components, you can use these where loops on those pages / posts instead
+
+{% assign entries = site.components | where:"type","buttons" %}
+{% for entry in entries %}
+  {% include component.html %}
+{% endfor %}
+
+{% assign entries = site.components | where:"type","typography" %}
+{% for entry in entries %}
+  {% include component.html %}
+{% endfor %}
+
+{% endcomment %}
