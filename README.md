@@ -6,9 +6,9 @@
 [![npm package][npm-badge]][releases] 
 [![][mit-badge]][mit]
 
-bdash is CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. It aims to make our development be fast and maintanable.
+The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. It aims to make our development be fast and maintainable.
 
- **We love Open Source**. :grin: :v: We also always welcome your suggestion but it is our internal CSS toolkit so we can not add new features we do not use in product but we think seriously about your suggesiton. If your suggesiton is considering exisiting code, it will be better. Thanks in advance. Lean more about [CONTRIBUTING](#contributing)
+:grin: :v: **We love Open Source** so we are always welcome your suggestion but it is our internal CSS toolkit so we can not add new features we do not use in product but we think seriously about your suggesiton. If your suggesiton is considering exisiting code, it will be better. Thanks in advance. Lean more about [CONTRIBUTING](#contributing).
 
 ## Table of contents
 
