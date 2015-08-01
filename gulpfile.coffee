@@ -1,9 +1,7 @@
 'use strict'
 # Include Gulp libraries
-gulp     = require 'gulp'
-cp       = require 'child_process'
-critical = require 'critical'
-$        = require('gulp-load-plugins')()
+gulp = require 'gulp'
+$ = do require 'gulp-load-plugins'
 
 AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -38,7 +36,7 @@ gulp.task 'style:docs', ->
   .pipe $.minifyCss()
   .pipe $.sourcemaps.write('.')
   .pipe $.size {title:  'style:docs'}
-  .pipe gulp.dest './docs/css'
+  .pipe gulp.dest './docs/assets/css'
 
 # Minify Stylesheets
 gulp.task 'style:minify', ->
@@ -48,26 +46,6 @@ gulp.task 'style:minify', ->
   .pipe $.size {title: 'min'}
   .pipe gulp.dest './css'
 
-# Critical CSS
-gulp.task 'style:critical', ->
-  critical.generate({
-    base: 'docs/_site/',
-    src:  'docs/index.html'
-    dest: 'docs/css/critical.min.css',
-    width: 1200,
-    height: 900,
-    minify: true
-  })
-
-# Build Jekyll
-gulp.task 'jekyll:build', (done) ->
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-    .on('close', done)
-
-# Deploy docs page in gh_page
-gulp.task 'jekyll:deploy', ->
-  gulp.src('./docs/_site')
-  .pipe $.ghPages()
 
 # Generate Style guides
 gulp.task 'default', ['style', 'min']
