@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $DASHBOARD
+\*------------------------------------*/
+/**
+ *
+ *
+  <div am-dashboard-wrapper>
+    <aside am-dashboard-aside='scrollable'></main>
+    <main am-dashboard-main='scrollable'></main>
+  </div>
+ *
+ */
+[am-dashboard-aside]
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  width: dashboard-width
+
+
+[am-dashboard-main]
+  position: relative
+  float: right
+  top: 0
+  width: calc(100% - dashboard-width)
+
+
+[am-dashboard-aside~='scrollable'],
+[am-dashboard-main~='scrollable']
+  overflow: auto
+  height: 100%
+  max-height: 100%
+
