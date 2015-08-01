@@ -15,19 +15,17 @@ The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer
 * [Install](#install)
 * [Usage](#usage)
 * [Documentation](#documentation)
- * [Style Guide](#style-guide)
- * [Wiki](#wiki)
 * [Updating](#updating)
 * [Browser Compatibility](#browser-compatibility)
 * [Contributing](#contributing)
 * [Versioning](#versioning)
 * [License](#license)
 
-## Install
+## installation
 
 **Bower**
 
-```
+```bash
 $ bower install bdash --save
 ```
 
@@ -56,20 +54,6 @@ In html, add link below:
 ```
 
 ## Documentation
-
-**Style Guide**
-
-Install hologram:
-
-```bash
-$ bundle
-```
-
-Generate style guide:
-
-```bash
-$ npm run styleguide
-```
 
 **Wiki**
 
