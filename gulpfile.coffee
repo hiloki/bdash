@@ -35,6 +35,7 @@ gulp.task 'style:docs', ->
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
   .pipe do $.minifyCss
   .pipe $.sourcemaps.write('.')
+  .pipe $.rename {suffix: '.min'}
   .pipe $.size {title:  'style:docs'}
   .pipe gulp.dest './docs/assets/buildCss'
 
