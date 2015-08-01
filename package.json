@@ -36,7 +36,8 @@
   "scripts": {
     "build": "gulp",
     "min": "gulp min",
-    "stylus": "gulp stylus",
+    "style": "gulp style",
+    "style:docs": "gulp style:docs",
     "test": "gulp"
   }
 }
