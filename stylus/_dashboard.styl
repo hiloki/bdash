@@ -5,11 +5,22 @@
  *
  *
   <div am-dashboard-wrapper>
-    <aside am-dashboard-aside='scrollable'></main>
-    <main am-dashboard-main='scrollable'></main>
+    <aside am-dashboard-aside></main>
+    <main am-dashboard-main></main>
   </div>
  *
  */
+[am-dashboard-wrapper]
+  height: 100%
+
+
+[am-dashboard-aside],
+[am-dashboard-main]
+  overflow: auto
+  height: 100%
+  max-height: 100%
+
+
 [am-dashboard-aside]
   position: absolute
   top: 0
@@ -24,10 +35,4 @@
   top: 0
   width: calc(100% - dashboard-width)
 
-
-[am-dashboard-aside~='scrollable'],
-[am-dashboard-main~='scrollable']
-  overflow: auto
-  height: 100%
-  max-height: 100%
 
