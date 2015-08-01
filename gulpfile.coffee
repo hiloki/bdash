@@ -46,6 +46,5 @@ gulp.task 'style:minify', ->
   .pipe $.size {title: 'min'}
   .pipe gulp.dest './css'
 
-
 # Generate Style guides
-gulp.task 'default', ['style', 'min']
+gulp.task 'default', ['style', 'style:minify', 'style:docs']
