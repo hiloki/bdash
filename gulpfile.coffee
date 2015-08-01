@@ -46,5 +46,10 @@ gulp.task 'style:minify', ->
   .pipe $.size {title: 'min'}
   .pipe gulp.dest './css'
 
+# Deploy docs page
+gulp.task 'deploy', ->
+  gulp.src './docs/'
+  .pipe $.hgPages()
+
 # Generate Style guides
 gulp.task 'default', ['style', 'style:minify', 'style:docs']

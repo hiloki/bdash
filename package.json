@@ -38,6 +38,7 @@
     "min": "gulp min",
     "style": "gulp style",
     "style:docs": "gulp style:docs",
+    "deploy": "gulp deploy",
     "test": "gulp"
   }
 }
