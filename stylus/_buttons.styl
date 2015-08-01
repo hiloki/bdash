@@ -1,18 +1,19 @@
-/*doc
----
-title: Buttons
-name: Base Button
-category: buttons
----
-
-```html_example
-<button am-button>Base Button</button>
-```
-
-*/
 /*------------------------------------*\
-    $BASE
+    $BUTTON
 \*------------------------------------*/
+
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+/**
+ *
+  <button am-button>Button</div>
+ *
+ */
 [am-button]
   display: inline-block;
   font-family: inherit
@@ -43,20 +44,13 @@ category: buttons
 
 
 
-/*doc
----
-title: Buttons
-name: Outlined and Solid
-category: buttons
----
-
-
-```html_example
-<button am-butto="solid">Solid Button</button>
-<button am-butto="fill">Fill Button</button>
-```
-
-*/
+/*------------------------------------*\
+    #SOLID
+\*------------------------------------*/
+/**
+ *
+  <button am-button='solid'>Solid Button</button>
+ */
 [am-button~="solid"]
   background: #fff
   border: 1px solid brand-color
@@ -66,7 +60,17 @@ category: buttons
     background: brand-color
     color: #fff
 
-// Fill
+
+
+
+
+/*------------------------------------*\
+    #FILL
+\*------------------------------------*/
+/**
+ *
+  <button am-button='fill'>Solid Button</button>
+ */
 [am-button~="fill"]
   background: brand-color
   border: 1px solid brand-color
@@ -79,119 +83,118 @@ category: buttons
 
 
 
-
-
-
-
-
-
-/*doc
----
-title: Buttons
-name: Solid Functions
-category: buttons
----
-
-
-```html_example
-<button am-butto="default solid">Default</button>
-<button am-butto="primary solid">Primary</button>
-<button am-butto="success solid">Success</button>
-<button am-butto="danger solid">Success</button>
-```
-
-*/
-/*doc
----
-title: Buttons
-name: Fill Functions
-category: buttons
----
-
-
-```html_example
-<button am-butto="default fill">Default</button>
-<button am-butto="primary fill">Primary</button>
-<button am-butto="success fill">Success</button>
-<button am-butto="danger fill">Success</button>
-```
-
-*/
 /*------------------------------------*\
-    $FUNCTIONS
+    #FUNCTION
 \*------------------------------------*/
-button-default-color = #d5d5d5
-button-primary-color = #337ab7
-button-success-color = #5cb85c
-button-danger-color  = #d9534f
-
-[am-button~="default fill"]
-  background: button-default-color
-  border: 1px solid button-default-color
-
-[am-button~="default solid"]
+/**
+ * Solid
+ *
+  <button am-butto="default:solid">Default</button>
+  <button am-butto="primary:solid">Primary</button>
+  <button am-butto="success:solid">Success</button>
+  <button am-butto="danger:solid">Success</button>
+ *
+ */
+/**
+ * Default
+ */
+[am-button~="default:solid"]
   color: button-default-color
   border: 1px solid button-default-color
   &:hover
     background: button-default-color
 
 
-[am-button~="primary fill"]
-  background: button-primary-color
-  border: 1px solid button-primary-color
-
-[am-button~="primary solid"]
+/**
+ * Primary
+ */
+[am-button~="primary:solid"]
   color: button-primary-color
   border: 1px solid button-primary-color
   &:hover
     background: button-primary-color
 
 
-[am-button~="success fill"]
-  background: button-success-color
-  border: 1px solid button-success-color
-
-[am-button~="success solid"]
+/**
+ * Success
+ */
+[am-button~="success:solid"]
   color: button-success-color
   border: 1px solid button-success-color
   &:hover
     background: button-success-color
 
 
-[am-button~="danger fill"]
-  background: button-danger-color
-  border: 1px solid button-danger-color
-
-[am-button~="danger solid"]
+/**
+ * Danger
+ */
+[am-button~="danger:solid"]
   color: button-danger-color
   border: 1px solid button-danger-color
   &:hover
     background: button-danger-color
 
 
+/**
+ * Fill
+ *
+  <button am-butto="default:fill">Default</button>
+  <button am-butto="primary:fill">Primary</button>
+  <button am-butto="success:fill">Success</button>
+  <button am-butto="danger:fill">Success</button>
+ *
+ */
+/**
+ * Default
+ */
+[am-button~="default:fill"]
+  background: button-default-color
+  border: 1px solid button-default-color
 
 
-/*doc
----
-title: Buttons
-name: Style
-category: buttons
----
+/**
+ * Primary
+ */
+[am-button~="primary:fill"]
+  background: button-primary-color
+  border: 1px solid button-primary-color
 
 
-```html_example
-<button am-butto="soft">Soft</button>
-<button am-butto="hard">Hrd</button>
-```
+/**
+ * Success
+ */
+[am-button~="success:fill"]
+  background: button-success-color
+  border: 1px solid button-success-color
 
-*/
+
+/**
+ * Danger
+ */
+[am-button~="danger:fill"]
+  background: button-danger-color
+  border: 1px solid button-danger-color
+
+
+
+
+
 /*------------------------------------*\
-    $STYLES
+    #STYLE
 \*------------------------------------*/
-// Ellipse
+/**
+ * Soft
+ *
+  <button am-button="soft">Button</button>
+ */
 [am-button~="soft"]
   border-radius: 200px
 
-// Square
+
+/**
+ * Hard
+ *
+  <button am-button="hard">Button</button>
+ */
 [am-button~="hard"]
   border-radius: 0
