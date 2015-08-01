@@ -1,7 +1,7 @@
 'use strict'
 # Include Gulp libraries
 gulp = require 'gulp'
-$ = require('gulp-load-plugins')()
+$ = do require 'gulp-load-plugins'
 
 AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -16,38 +16,36 @@ AUTOPREFIXER_BROWSERS = [
 ]
 
 # Transpile and Automatically Prefix Stylesheets
-gulp.task 'stylus', ->
+gulp.task 'style', ->
   gulp.src './stylus/bdash.styl'
-  # .pipe $.changed('./stylus', {extension: '.styl'})
   .pipe $.sourcemaps.init()
   .pipe $.stylus()
   .pipe $.csscomb()
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
   .pipe $.sourcemaps.write('.')
-  .pipe $.size {title:  'stylus'}
+  .pipe $.size {title:  'style'}
   .pipe gulp.dest './css'
 
+# Transpile and Automatically Prefix Stylesheets for style guide
+gulp.task 'style:docs', ->
+  gulp.src './stylus/bdash.styl'
+  .pipe $.sourcemaps.init()
+  .pipe $.stylus()
+  .pipe $.csscomb()
+  .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
+  .pipe $.minifyCss()
+  .pipe $.sourcemaps.write('.')
+  .pipe $.size {title:  'style:docs'}
+  .pipe gulp.dest './docs/assets/css'
+
 # Minify Stylesheets
-gulp.task 'min', ->
+gulp.task 'style:minify', ->
   gulp.src './css/bdash.css'
   .pipe $.minifyCss()
   .pipe $.rename {suffix: '.min'}
   .pipe $.size {title: 'min'}
   .pipe gulp.dest './css'
 
-# Generate Style guides
-gulp.task 'styleguide', ->
-  hologramConfig  = './hologram_config.yml';
-  hologramOptions = {
-    logging: true,
-    bundler: false
-  }
-  gulp.src hologramConfig
-  .pipe $.hologram hologramOptions
-
-gulp.task 'deploy', ->
-  gulp.src('./docs/')
-  .pipe $ghPages()
 
 # Generate Style guides
-gulp.task 'default', ['stylus', 'min', 'deploy']
+gulp.task 'default', ['style', 'min']
