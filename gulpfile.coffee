@@ -36,7 +36,7 @@ gulp.task 'style:docs', ->
   .pipe $.minifyCss()
   .pipe $.sourcemaps.write('.')
   .pipe $.size {title:  'style:docs'}
-  .pipe gulp.dest './docs/assets/css'
+  .pipe gulp.dest './docs/assets/buildCss'
 
 # Minify Stylesheets
 gulp.task 'style:minify', ->
