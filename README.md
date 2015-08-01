@@ -29,7 +29,7 @@ The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer
 $ bower install bdash --save-dev
 ```
 
-**Npm**
+**npm**
 
 ```bash
 $ npm install bdash --save-dev
