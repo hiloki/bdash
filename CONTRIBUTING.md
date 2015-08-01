@@ -1,9 +1,14 @@
 Contributing
 ============================
 
+1. Fork & clone this porject
+2. Create a topic branch from `develop` branch
+3. :sparkles: Happy hacking 
+4. Send a pull request
+
 ## Git Commit Messages
 
-Note: This **Git Commit Messages** was taken from by [atom/atom/CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md) because it is amazing. Thanks to atom project.
+**DO**
 
 * Use the present tense ("Add feature" not "Added feature")
 * Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
@@ -23,3 +28,14 @@ Note: This **Git Commit Messages** was taken from by [atom/atom/CONTRIBUTING.md]
     * :white_check_mark: `:white_check_mark:` when adding tests
     * :lock: `:lock:` when dealing with security
     * :arrow_up: `:arrow_up:` when upgrading dependencies
+
+**DON'T**
+
+* Don't end the summary line with a period
+
+## Acknowledgement
+
+Inspiration and idea was taken from many sources, including:
+
+* [atom/CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+* [Writing good commit messages](https://github.com/erlang/otp/wiki/Writing-good-commit-messages)

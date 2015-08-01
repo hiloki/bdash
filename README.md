@@ -3,8 +3,9 @@
 > The CSS toolkit of SIROK, Inc.
 
 [![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![npm package][npm-ver-link]][releases]
-[![][dl-badge]][npm-pkg-link]
+[![Wercker][wercker-badge]][releases]
+[![bower package][bower-badge]][releases]
+[![npm package][npm-badge]][releases] 
 [![][mit-badge]][mit]
 
 bdash is CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. It aims to make our development be fast and maintanable.
@@ -94,7 +95,7 @@ $ bower update
 
 ## Contributing
 
-Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING) for guidelines.
+Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
 
 ## Versioning
 
@@ -108,6 +109,8 @@ For transparency into our release cycle and in striving to maintain backward com
 [mit-badge]:      https://img.shields.io/github/license/sotayamashita/bdash.svg?style=flat-square
 [releases]:       https://github.com/sotayamashita/bdash/releases
 [npm-pkg-link]:   https://www.npmjs.org/package/bdash
-[npm-ver-link]:   https://img.shields.io/npm/v/bdash.svg?style=flat-square
+[npm-badge]:      https://img.shields.io/npm/v/bdash.svg?style=flat-square
+[bower-badge]:    https://img.shields.io/bower/v/bdash.svg?style=flat-square
+[wercker-badge]:  https://img.shields.io/wercker/ci/wercker/docs.svg?style=flat-square
 [dl-badge]:       http://img.shields.io/npm/dm/bdash.svg?style=flat-square
 [primer]:         https://github.com/primer/primer
