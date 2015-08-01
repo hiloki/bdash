@@ -18,9 +18,9 @@ AUTOPREFIXER_BROWSERS = [
 # Transpile and Automatically Prefix Stylesheets
 gulp.task 'style', ->
   gulp.src './stylus/bdash.styl'
-  .pipe $.sourcemaps.init()
-  .pipe $.stylus()
-  .pipe $.csscomb()
+  .pipe do $.sourcemaps.init
+  .pipe do $.stylus
+  .pipe do $.csscomb
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
   .pipe $.sourcemaps.write('.')
   .pipe $.size {title:  'style'}
@@ -29,11 +29,11 @@ gulp.task 'style', ->
 # Transpile and Automatically Prefix Stylesheets for style guide
 gulp.task 'style:docs', ->
   gulp.src './stylus/bdash.styl'
-  .pipe $.sourcemaps.init()
-  .pipe $.stylus()
-  .pipe $.csscomb()
+  .pipe do $.sourcemaps.init
+  .pipe do $.stylus
+  .pipe do $.csscomb
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
-  .pipe $.minifyCss()
+  .pipe do $.minifyCss
   .pipe $.sourcemaps.write('.')
   .pipe $.size {title:  'style:docs'}
   .pipe gulp.dest './docs/assets/buildCss'
@@ -41,15 +41,15 @@ gulp.task 'style:docs', ->
 # Minify Stylesheets
 gulp.task 'style:minify', ->
   gulp.src './css/bdash.css'
-  .pipe $.minifyCss()
+  .pipe do $.minifyCss
   .pipe $.rename {suffix: '.min'}
   .pipe $.size {title: 'min'}
   .pipe gulp.dest './css'
 
 # Deploy docs page
-gulp.task 'deploy', ->
-  gulp.src './docs/'
-  .pipe $.hgPages()
+gulp.task 'deploy', ['style:docs'], ->
+  gulp.src './docs/**/*'
+  .pipe do $.ghPages
 
 # Generate Style guides
 gulp.task 'default', ['style', 'style:minify', 'style:docs']
