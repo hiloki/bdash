@@ -22,7 +22,7 @@ The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer
 * [License](#license)
 * [About SIROK, Inc.](#about-sirok-inc) 
 
-## installation
+## Installation
 
 **bower**
 
