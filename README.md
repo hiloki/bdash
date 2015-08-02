@@ -91,7 +91,15 @@ For transparency into our release cycle and in striving to maintain backward com
 
 ## License
 
-bdash is maintained and founded by [SIROK, Inc][sirok]. It may be redistributed under the terms specified in the [License][mit]
+Copyright © 2015 [SIROK, Inc][sirok]. It is free software, and may be redistributed under the terms specified in the [license][mit].
+
+Whenever code for bdash is borrowed or inspired by existing code, we try to credit the original developer/designer in our source code. Please create issues if you think any credit is absent.
+
+## About SIROK, Inc.
+
+[<img src="http://sirok.co.jp/wordpress/wp-content/themes/sirokco_v2.1/svg/bgWhite/logo.svg"  width="300">][sirok]
+
+bdash is maintained and funded by SIROK, Inc. The names and logos for SIROK are trademarks of SIROK, Inc.
 
 [sirok]:          http://sirok.co.jp/
 [mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
