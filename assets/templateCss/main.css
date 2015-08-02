@@ -9,6 +9,7 @@ body {
   font-size: 14px;
   color: #44525a;
   line-height: 1.5;
+  background: #fafafa;
 }
 
 
@@ -34,6 +35,14 @@ main {
   height: 100%;
 }
 
+footer {
+  padding: 30px 0;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+footer small { font-size: 14px; }
 
 /**
  * aside
