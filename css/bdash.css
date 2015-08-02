@@ -199,6 +199,28 @@ body {
 [lang="en"] body {
     font-family: "Lato", "Noto Sans Japanese", sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HiraKakuPro-W3";
 }
+a {
+    transiton: color 0.5s ease-in;
+    text-decoration: none;
+    color: #0086b3;
+}
+a:hover {
+    color: #006080;
+}
+p a {
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00b8f5 50%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, #00b8f5 50%);
+    background-position: 0 93%;
+    background-repeat: repeat-x;
+    background-size: 100% 0.15rem;
+    text-shadow: 0.1rem 0 #fff, 0.15rem 0 #fff, -0.1rem 0 #fff, -0.15rem 0 #fff;
+}
+p a:hover,
+p a:avtive,
+p a:focus {
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #09c 50%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, #09c 50%);
+}
 /**
  * Elements
  */
@@ -394,13 +416,35 @@ body {
     border-radius: 3px;
 }
 [am-pagination] {
-    display: inline-block;
+    list-style: none;
+    margin-left: 0;
 }
-[am-pagination] li {
+[am-pagination] > li,
+[am-pagination] > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+[am-pagination] > li {
     margin-right: 5px;
 }
-[am-pagination] li a {
+[am-pagination] > li > a {
     padding: 6px 12px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    color: #000;
+    -webkit-transition: background, color, border-color, 0.5s ease-in;
+            transition: background, color, border-color, 0.5s ease-in;
+}
+[am-pagination] > li > a:hover {
+    background: #d69330;
+    color: #fff;
+    border-color: #ddd;
+}
+[am-pagination] li.active a {
+    background: #d69330;
+    color: #fff;
+    border-color: #ddd;
 }
 
 /*# sourceMappingURL=bdash.css.map */
