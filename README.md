@@ -91,8 +91,9 @@ For transparency into our release cycle and in striving to maintain backward com
 
 ## License
 
-[MIT][mit] © SIROK, Inc. 2015.
+bdash is maintained and founded by [SIROK, Inc][sirok]. It may be redistributed under the terms specified in the [License][mit]
 
+[sirok]:          http://sirok.co.jp/
 [mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
 [mit-badge]:      https://img.shields.io/github/license/sotayamashita/bdash.svg?style=flat-square
 [releases]:       https://github.com/sotayamashita/bdash/releases
