@@ -24,7 +24,7 @@ The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer
 
 ## installation
 
-**Bower**
+**bower**
 
 ```bash
 $ bower install bdash --save-dev
