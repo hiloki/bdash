@@ -99,40 +99,43 @@
  * Default
  */
 [am-button~="default:solid"]
-  color: button-default-color
-  border: 1px solid button-default-color
+  @extend [am-button~="solid"]
+  color: color-default
+  border: 1px solid color-default-border
   &:hover
-    background: button-default-color
-
-
-/**
- * Primary
- */
-[am-button~="primary:solid"]
-  color: button-primary-color
-  border: 1px solid button-primary-color
-  &:hover
-    background: button-primary-color
+    background: color-default
 
 
 /**
  * Success
  */
 [am-button~="success:solid"]
-  color: button-success-color
-  border: 1px solid button-success-color
+  @extend [am-button~="solid"]
+  color: color-success
+  border: 1px solid color-success-border
   &:hover
-    background: button-success-color
+    background: color-success
+
+/**
+ * Warning
+ */
+[am-button~="warning:solid"]
+  @extend [am-button~="solid"]
+  color: color-warning
+  border: 1px solid color-warning-border
+  &:hover
+    background: color-warning
 
 
 /**
  * Danger
  */
 [am-button~="danger:solid"]
-  color: button-danger-color
-  border: 1px solid button-danger-color
+  @extend [am-button~="solid"]
+  color: color-danger
+  border: 1px solid color-danger-border
   &:hover
-    background: button-danger-color
+    background: color-danger
 
 
 /**
@@ -148,32 +151,36 @@
  * Default
  */
 [am-button~="default:fill"]
-  background: button-default-color
-  border: 1px solid button-default-color
-
-
-/**
- * Primary
- */
-[am-button~="primary:fill"]
-  background: button-primary-color
-  border: 1px solid button-primary-color
+  @extend [am-button~="fill"]
+  background: color-default
+  border: 1px solid color-default-border
 
 
 /**
  * Success
  */
 [am-button~="success:fill"]
-  background: button-success-color
-  border: 1px solid button-success-color
+  @extend [am-button~="fill"]
+  background: color-success
+  border: 1px solid color-success-border
+
+
+/**
+ * Warning
+ */
+[am-button~="warning:fill"]
+  @extend [am-button~="fill"]
+  background: color-warning
+  border: 1px solid color-warning-border
 
 
 /**
  * Danger
  */
 [am-button~="danger:fill"]
-  background: button-danger-color
-  border: 1px solid button-danger-color
+  @extend [am-button~="fill"]
+  background: color-danger
+  border: 1px solid color-danger-border
 
 
 
