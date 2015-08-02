@@ -52,5 +52,22 @@ gulp.task 'deploy', ['style:docs'], ->
   gulp.src './docs/**/*'
   .pipe do $.ghPages
 
+# Commit build direcotories
+gulp.task 'commit:css', ['style'], ->
+  gulp.src 'css/'
+  .pipe $.shell([
+    'git add css',
+    'git commit -m ":art: Update: CSS: `date`"'
+    'git push'
+  ])
+
+gulp.task 'commit:docs', ['style:docs'], ->
+  gulp.src 'docs/'
+  .pipe $.shell([
+    'git add docs',
+    'git commit -m ":book: Update: Docs: `date`"'
+    'git push'
+  ])
+
 # Generate Style guides
 gulp.task 'default', ['style', 'style:minify', 'style:docs']
