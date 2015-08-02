@@ -31,8 +31,9 @@
     <aside>
       <h2>Elements</h2>
       <nav>
-        <a href="">Button</a>
-        <a href="">Tab Navigation</a>
+        <a href="#button">Button</a>
+        <a href="#pagination">Pagination</a>
+        <a href="#tab-navigation">Tab Navigation</a>
       </nav>
     </aside>
 
@@ -40,7 +41,7 @@
 
 
 
-    <h1 class="element__title">Button</h1>
+    <h1 class="element__title" id="button">Button</h1>
     <p></p>
 
     <div class="element-example">
@@ -131,6 +132,66 @@
 &lt;button am-button="success:fill"&gt;Success&lt;/button&gt;
 &lt;button am-button="warning:fill"&gt;Warning&lt;/button&gt;
 &lt;button am-button="danger:fill"&gt;Danger&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Soft Button</h2>
+      <p class="element-example__description">
+        Fill buttons style
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button am-button="soft default:fill">Soft Button</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;button am-button="soft"&gt;Default&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Hard Buttons</h2>
+      <p class="element-example__description">
+        Fill buttons hard
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button am-button="hard default:fill">Hard Button</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;button am-button="hard"&gt;Default&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <h1 class="element__title" id="pagination">Pagination</h1>
+    <div class="element">
+      <h2 class="element-example__title">Pegination</h2>
+      <p class="element-example__description">
+        pagination
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <ul am-pagination>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;ul am-pagination&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
       </div><!-- .code-example__block -->
     </div><!-- .code-example -->
 
