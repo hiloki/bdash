@@ -97,7 +97,7 @@ Whenever code for bdash is borrowed or inspired by existing code, we try to cred
 
 ## About SIROK, Inc.
 
-[<img src="http://sirok.co.jp/wordpress/wp-content/themes/sirokco_v2.1/svg/bgWhite/logo.svg"  width="300">][sirok]
+[<img src="http://sirok.co.jp/wordpress/wp-content/themes/sirokco_v2.1/svg/bgWhite/logo.svg"  width="240">][sirok]
 
 bdash is maintained and funded by SIROK, Inc. The names and logos for SIROK are trademarks of SIROK, Inc.
 
