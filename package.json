@@ -34,10 +34,6 @@
     "type": "git",
     "url": "git+https://github.com/sotayamashita/bdash.git"
   },
-  "gh-pages-deploy": {
-    "staticpath": "docs",
-    "noprompt": false
-  },
   "scripts": {
     "build": "gulp",
     "min": "gulp min",
