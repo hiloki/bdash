@@ -20,7 +20,7 @@ gulp.task 'style', ->
   .pipe do $.stylus
   .pipe do $.csscomb
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
-  .pipe $.sourcemaps.write('.')
+  .pipe $.sourcemaps.write()
   .pipe $.size {title:  'style'}
   .pipe gulp.dest './css'
 
