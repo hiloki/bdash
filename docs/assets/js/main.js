@@ -3,8 +3,20 @@
  * https://github.com/feross/standard
  */
 !(function () {
-  console.log('Are you interesed in this code ? => ' + '%c github()', 'font-weight: bold; color: #44525a;')
-  console.log('Are you interesed in us ? => ' + '%c join()', 'font-weight: bold; color: #44525a;')
+
+  var message =  {
+    join: {
+      text: 'Are you interesed in this code ? => github()',
+      style: 'font-weight: bold; color: #44525a; font-size: 14px;'
+    },
+    code: {
+      text: 'Are you interesed in us ? =>  join()',
+      style: 'font-weight: bold; color: #44525a; font-size: 14px; background-image: url("http://www.emoji-cheat-sheet.com/graphics/emojis/octocat.png"); background-size: cover'
+    }
+  }
+
+  console.log('%c' + message.code.text + ' %c %c', message.code.style)
+  console.log('%c ' + message.join.text, message.join.style)
 }());
 
 
