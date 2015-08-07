@@ -41,7 +41,7 @@
     "style:docs": "gulp style:docs",
     "test": "gulp",
     "deploy": "git subtree push --prefix docs/ origin gh-pages",
-    "docs": "git add docs && git commit -m ':book: Update: Docs: `date`'",
-    "css": "git add css && git commit -m ':art: Update: CSS: `date`'"
+    "docs": "git add docs && git commit -m \":book: Update: doc: `date`\"",
+    "css": "git add css && git commit -m \":art: Update: css: `date`\""
   }
 }
