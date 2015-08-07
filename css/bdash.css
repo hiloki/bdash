@@ -200,7 +200,7 @@ body {
     font-family: "Lato", "Noto Sans Japanese", sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HiraKakuPro-W3";
 }
 a {
-    transiton: color 0.5s ease-in;
+    transiton: color 0.2s linear;
     text-decoration: none;
     color: #0086b3;
 }
@@ -263,8 +263,8 @@ p a:focus {
     background: #fff;
     border: 1px solid #d69330;
     color: #d69330;
-    -webkit-transition: background, color, 0.5s ease-in;
-            transition: background, color, 0.5s ease-in;
+    -webkit-transition: background, color, 0.2s linear;
+            transition: background, color, 0.2s linear;
 }
 [am-button~="solid"]:hover,
 [am-button~="default:solid"]:hover,
@@ -282,8 +282,8 @@ p a:focus {
     background: #d69330;
     border: 1px solid #d69330;
     color: #fff;
-    -webkit-transition: opacity 0.5s ease-in;
-            transition: opacity 0.5s ease-in;
+    -webkit-transition: opacity 0.2s linear;
+            transition: opacity 0.2s linear;
 }
 [am-button~="fill"]:hover,
 [am-button~="default:fill"]:hover,
@@ -433,8 +433,8 @@ p a:focus {
     border-radius: 3px;
     border: 1px solid #ddd;
     color: #000;
-    -webkit-transition: background, color, border-color, 0.5s ease-in;
-            transition: background, color, border-color, 0.5s ease-in;
+    -webkit-transition: background, color, border-color, 0.2s linear;
+            transition: background, color, border-color, 0.2s linear;
 }
 [am-pagination] > li > a:hover {
     background: #d69330;
