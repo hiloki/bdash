@@ -35,7 +35,7 @@ gulp.task 'style:docs', ->
   .pipe $.sourcemaps.write('.')
   .pipe $.rename {suffix: '.min'}
   .pipe $.size {title:  'style:docs'}
-  .pipe gulp.dest './docs/assets/buildCss'
+  .pipe gulp.dest './docs/assets/template/css'
 
 # Minify Stylesheets
 gulp.task 'style:minify', ->
