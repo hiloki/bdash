@@ -39,7 +39,6 @@ function openRecuitmentPage () {
   window.location.href=recruitment_page
 }
 
-
 /**
  * Redirect github page
  */
@@ -48,7 +47,6 @@ function github() {
   console.log('%c ' + message, 'color: #3E6DA7; background: #E4EDF4;')
   setTimeout('openGithubPage()', 3000)
 }
-
 
 /**
  * Open page
