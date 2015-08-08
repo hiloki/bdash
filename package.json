@@ -1,6 +1,6 @@
 {
   "name": "bdash",
-  "description": "The CSS toolkit of SIROK, Inc.",
+  "description": "The internal CSS toolkit of SIROK, Inc.",
   "version": "0.0.1",
   "author": "SIROK, Inc.",
   "bugs": {
@@ -27,7 +27,10 @@
   "keywords": [
     "SIROK",
     "css",
-    "ui"
+    "ui",
+    "toolkit",
+    "responsive",
+    "dashboard"
   ],
   "license": "MIT",
   "repository": {
