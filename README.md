@@ -54,10 +54,10 @@ Import files you would like to use in your project with `@import` below:
 
 **CSS**
 
-In html, add link below:
+Specify relationships between the current document and CSS:
 
 ```html
-<link rel="dist/bdash.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="dist/bdash.min.css" type="text/css">
 ```
 
 ## Documentation
@@ -100,7 +100,7 @@ Whenever code for bdash is borrowed or inspired by existing code, we try to cred
 
 [<img src="http://sirok.co.jp/wordpress/wp-content/themes/sirokco_v2.1/svg/bgWhite/logo.svg"  width="240">][sirok]
 
-bdash is maintained and funded by SIROK, Inc. The names and logos for SIROK are trademarks of SIROK, Inc.
+bdash is maintained and funded by SIROK, Inc. The names and logos are trademarks of SIROK, Inc.
 
 [sirok]:          http://sirok.co.jp/
 [mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
