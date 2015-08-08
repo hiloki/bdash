@@ -1,4 +1,4 @@
-> The CSS toolkit of SIROK, Inc.
+> The internal CSS toolkit of SIROK, Inc.
 
 [![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Wercker][wercker-badge]][releases]
@@ -35,6 +35,12 @@ $ bower install bdash --save-dev
 ```bash
 $ npm install bdash --save-dev
 ```
+
+## What's included
+
+In the repo you'll find the following directories and files:
+
+
 
 ## Usage
 
