@@ -40,7 +40,7 @@ $ npm install bdash --save-dev
 
 **Stylus**
 
-Import files you would like to use in your project with `@import` below:
+Import files in your project with `@import` below:
 
 ```stylus
 // Example: All files
@@ -54,7 +54,7 @@ Import files you would like to use in your project with `@import` below:
 
 **CSS**
 
-Specify relationships between the current document and CSS:
+Specify relationships between the current document and CSS below:
 
 ```html
 <link rel="stylesheet" href="dist/bdash.min.css" type="text/css">
