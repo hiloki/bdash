@@ -57,7 +57,7 @@ Import files you would like to use in your project with `@import` below:
 In html, add link below:
 
 ```html
-<link rel="dist/bdash.min.css" rel="stylesheet">
+<link rel="dist/bdash.min.css" rel="stylesheet" />
 ```
 
 ## Documentation
@@ -86,16 +86,15 @@ $ bower update
 
 Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
 
-
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, IT is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
 
 ## License
 
-Copyright © 2015 [SIROK, Inc][sirok]. It is free software, and may be redistributed under the terms specified in the [license][mit].
+[MIT][mit] © [SIROK, Inc][sirok].
 
-Whenever code for bdash is borrowed or inspired by existing code, we try to credit the original developer/designer in our source code. Please create issues if you think any credit is absent.
+Whenever code for bdash is borrowed or inspired by existing code, we try to credit the original developer/designer in our code. Please create [issues][issue] if you think any credit is absent.
 
 ## About SIROK, Inc.
 
@@ -113,3 +112,4 @@ bdash is maintained and funded by SIROK, Inc. The names and logos for SIROK are 
 [wercker-badge]:  https://img.shields.io/wercker/ci/wercker/docs.svg?style=flat-square
 [dl-badge]:       http://img.shields.io/npm/dm/bdash.svg?style=flat-square
 [primer]:         https://github.com/primer/primer
+[issue]:          https://github.com/sotayamashita/bdash/issues
