@@ -72,14 +72,6 @@ Import files in your project with `@import` below:
 @import "bdash/stylus/_buttons"
 ```
 
-### What's included
-
-| File          | Provides |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
 **CSS**
 
 Specify relationships between the current document and CSS below:
