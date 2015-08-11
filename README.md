@@ -60,7 +60,7 @@ In the stylus directories you'll find the following files:
 
 **Stylus**
 
-Import files in your project with `@import` below:
+Import files in your project using `@import` without the extension below:
 
 ```stylus
 // Example: All files
