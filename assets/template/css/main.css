@@ -132,8 +132,25 @@ aside nav a:hover {text-decoration: underline;}
   padding: 16px;
 }
 
-
-
+.chrome .code-example__block {
+  position: relative;
+}
+.chrome .code-example__block:after {
+  content: "Copy";
+  border-bottom-left-radius: 3px;
+  border: 1px solid #e0e8ef;
+  background: #fff;
+  position: absolute;
+  width: 46px;
+  top: -1px;
+  right: -1px;
+  padding: 3px 6px;
+  letter-spacing: .5px;
+  color: #797979;
+  font-weight: 300;
+  font-size: 13px;
+  cursor: pointer;
+}
 
 .code-example__block code {
   background: #f1f4f8;
