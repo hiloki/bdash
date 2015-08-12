@@ -3,7 +3,7 @@
 [![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Wercker][wercker-badge]][releases]
 [![bower package][bower-badge]][releases]
-[![npm package][npm-badge]][releases] 
+[![npm package][npm-badge]][npm-pkg-link]
 [![][mit-badge]][mit]
 
 The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. It aims to make our development be fast and maintainable.
