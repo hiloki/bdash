@@ -2,10 +2,21 @@
   "name": "bdash",
   "description": "The internal CSS toolkit of SIROK, Inc.",
   "version": "0.0.1",
-  "author": "SIROK, Inc.",
+  "author": {
+    "name": "CyberAgent, Inc",
+    "email": " developer@sirok.co.jp",
+    "url": "http://sirok.co.jp/"
+  },
   "bugs": {
     "url": "https://github.com/sotayamashita/bdash/issues"
   },
+  "contributors": [
+    {
+      "name": "sota Yamashita",
+      "email": "sota_yamashita@sirok.co.jp",
+      "url": "https://github.com/sotayamashita"
+    }
+  ],
   "devDependencies": {
     "coffee-script": "^1.9.3",
     "gulp": "^3.9.0",
@@ -27,10 +38,10 @@
   "keywords": [
     "SIROK",
     "css",
-    "ui",
-    "toolkit",
+    "dashboard",
     "responsive",
-    "dashboard"
+    "toolkit",
+    "ui"
   ],
   "license": "MIT",
   "repository": {
@@ -39,12 +50,12 @@
   },
   "scripts": {
     "build": "gulp",
+    "css": "git add css && git commit -m \":art: Update: css: `date`\"",
+    "deploy": "git subtree push --prefix docs/ origin gh-pages",
+    "docs": "git add docs && git commit -m \":book: Update: doc: `date`\"",
     "min": "gulp min",
     "style": "gulp style",
     "style:docs": "gulp style:docs",
-    "test": "gulp",
-    "deploy": "git subtree push --prefix docs/ origin gh-pages",
-    "docs": "git add docs && git commit -m \":book: Update: doc: `date`\"",
-    "css": "git add css && git commit -m \":art: Update: css: `date`\""
+    "test": "gulp"
   }
 }
