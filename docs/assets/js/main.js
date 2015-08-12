@@ -4,6 +4,9 @@
  */
 !(function () {
 
+  if ( isChrome() ) { document.body.classList.add('chrome') }
+
+
   var styles = {
     common: "font-weight: bold; color: #44525a; font-size: 14px;",
     emoji: function(emoji) {
@@ -20,6 +23,11 @@
   console.log("%c" + messages.join + "%c  ", styles.common, styles.emoji("door"))
 
 }())
+
+
+function isChrome(){
+  return navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+}
 
 
 /**
