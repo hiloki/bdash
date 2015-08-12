@@ -28,20 +28,55 @@ main {
   background: #fff;
 }
 
-.container {
-  padding: 20px 30px;
+
+/**
+ * Aside & Main Header
+ */
+.aside__header,
+.main__header,
+.main__footer {
+  background: #fff;
+  padding: 10px 30px;
+  height: 42px;
+}
+
+.aside__header,
+.main__header { border-bottom: 1px solid #e0e8ef; }
+.main__footer { border-top:    1px solid #e0e8ef; }
+
+.main__content{ padding: 10px 30px; }
+
+
+/**
+ * Social buttons
+ */
+.main__header__social {
+  list-style-type: none;
+  float: right;
+  position: relative;
+  right: -15px;
+  top: 1px;
+}
+.main__header__social li {
+  display: inline-block;
+}
+
+
+/**
+ *
+ */
+.main__footer__sitemap {
+  list-style-type: none;
+}
+.main__footer__sitemap li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 
 
-
-
-/**
- * aside
- */
-aside h2 {
+aside h1 {
   font-size: 15px;
-  margin-bottom: 10px;
   font-weight: bold;
 }
 
