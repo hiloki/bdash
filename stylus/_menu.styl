@@ -1,0 +1,36 @@
+// There are not big deal style
+
+[am-menu-hamburger]
+  cursor: pointer
+  position: relative
+  span
+    position: absolute
+    background: black
+    width: 18px
+    height: 2px
+    &:before,
+    &:after
+      background-color: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+
+    &:before
+      bottom: 5px
+
+    &:after
+      top: 5px
+
+[am-menu-hamburger="active"]
+  span:before,
+  span:after
+    top: 0;
+    background-color: #5f8ee4;
+
+  span:before
+    transform: rotate(45deg)
+
+  span:after
+    transform: rotate(-45deg)
