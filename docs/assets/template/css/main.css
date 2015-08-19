@@ -45,7 +45,10 @@ main {
   display: block;
   color: #fff;
 }
-
+.main__header {
+  border-bottom:    1px solid #DADADA;
+  height: 60px;
+}
 .main__footer {
   border-top:    1px solid #DADADA;
   padding: 20px 30px 40px;
