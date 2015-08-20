@@ -78,6 +78,9 @@ main {
 /**
  * Aside navigation
  */
+.aside__navigation {
+  margin: 40px 0;
+}
 .aside__navigation li a {
   display: block;
   padding: 20px 20px 20px 30px;
