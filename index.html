@@ -24,36 +24,37 @@
   <link rel="stylesheet" href="./assets/template/css/github.css" />
 </head>
 <body>
+
+<header>
+  test
+</header>
+
 <div class="wrapper" am-dashboard-wrapper>
 
 <!-- aside -->
 <aside am-dashboard-aside>
-  <div class="aside__header">
-    <h1><a href="#">bdash 0.1.0</a></h1>
+  <div class="aside__content">
+    <nav class="aside__navigation">
+      <h3>Elements</h3>
+      <ul>
+        <li><a href="#">Button</a></li>
+        <li><a href="#">Pagination</a></li>
+        <li><a href="#">base</a></li>
+        <li><a href="#">code</a></li>
+        <li><a href="#">form</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">popup</a></li>
+        <li><a href="#">switch</a></li>
+        <li><a href="#">table</a></li>
+        <li><a href="#">tabnav</a></li>
+        <li><a href="#">dashboard</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="aside__navigation">
-    <ul>
-      <li><a href="#">Button</a></li>
-      <li><a href="#">Pagination</a></li>
-      <li><a href="#">base</a></li>
-      <li><a href="#">code</a></li>
-      <li><a href="#">form</a></li>
-      <li><a href="#">menu</a></li>
-      <li><a href="#">popup</a></li>
-      <li><a href="#">switch</a></li>
-      <li><a href="#">table</a></li>
-      <li><a href="#">tabnav</a></li>
-      <li><a href="#">dashboard</a></li>
-    </ul>
-  </nav>
 </aside>
 
 <!-- main -->
 <main am-dashboard-main>
-
-  <div class="main__header">
-
-  </div>
 
   <div class="main__content">
     <h1 class="element__title" id="button">Button</h1>
@@ -86,7 +87,7 @@
         <button am-button="solid">Solid Button</button>
       </div><!-- .code-example__output -->
       <div class="code-example__block">
-        <pre><code class="hljs html">&lt;button am-button="solid"&gt;Solid Button&lt;/button&gt;</code></pre>
+        <pre><code class="hljs html selectable" onclick="selectText(this)">&lt;button am-button="solid"&gt;Solid Button&lt;/button&gt;</code></pre>
       </div><!-- .code-example__block -->
     </div><!-- .code-example -->
 
@@ -211,7 +212,7 @@
     </div><!-- .code-example -->
   </div>
 
-  <div class="main__footer">
+<!--   <div class="main__footer">
     <ul class="main__footer__sitemap">
       <li><a href="">MIT © SIROK, Inc.</a></li>
       <li><a href="">Contributing</a></li>
@@ -219,7 +220,7 @@
     <div class="main__footer__copyright">
       <a href="">Design by SIROK, Inc.</a>
     </div>
-  </div>
+  </div> -->
 
 </main>
 </div><!-- .wrapper-->
@@ -231,13 +232,19 @@
 <script src="./assets/template/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<!-- Hammer.js -->
-<script src="./assets/js/hammer.min.js"></script>
+
 <script>
-var hammertime = new Hammer(myElement, myOptions);
-hammertime.on('pan', function(ev) {
-    console.log(ev);
-});
+  function selectText(elem) {
+    if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(elem);
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(elem);
+        window.getSelection().addRange(range);
+    }
+  }
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
