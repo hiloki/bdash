@@ -3,23 +3,49 @@
 /* color: */
 
 /**
- * Base
+ * Body
  */
 body {
   font-size: 14px;
   color: #44525a;
   line-height: 1.5;
-  background: #34404c;
+  background: #DDE0E6;
 }
 
-.common__header {
+
+/**
+ * Header
+ */
+header {
+  position: fixed;
   width: 100%;
   height: 50px;
-  background: #5b5e63;
-  position: relative;
+  background: red;
+  z-index: 9999;
 }
-.common__header + .wrapper [am-dashboard-aside] {
-  top: 50px;
+
+.wrapper {
+  margin: 0 auto
+}
+
+/**
+ * aside
+ */
+aside {
+  background: #F1F4F8;
+  border-right: 1px solid #e0e8ef;
+}
+
+.aside__content {
+  padding: 50px 0;
+}
+
+
+.aside__navigation h3 {
+  padding: 5px 0px 5px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
 }
 
 
@@ -27,19 +53,21 @@ body {
  * Main
  */
 main {
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,.3)
+
 }
+
+.main__content{
+  background: #fff;
+  padding: 50px 30px 20px;
+  max-width: 1000px;
+  overflow-x: hidden;
+}
+
 
 
 /**
  * Aside & Main Header
  */
-.aside__header {
-  padding: 10px 30px;
-  height: 60px;
-  background: #5f8ee4;
-}
 .aside__header h1 a {
   margin-top: 10px;
   display: block;
@@ -53,7 +81,7 @@ main {
   border-top:    1px solid #DADADA;
   padding: 20px 30px 40px;
 }
-.main__content{ padding: 20px 30px; }
+
 
 
 
@@ -79,20 +107,19 @@ main {
  * Aside navigation
  */
 .aside__navigation {
-  margin: 40px 0;
+  overflow-y: scroll;
+  height: 500px;
 }
 .aside__navigation li a {
   display: block;
-  padding: 20px 20px 20px 30px;
-  color: #949eae;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  padding: 4px 48px 4px 30px;
+  color: #AEAEAE;
 }
 
 .aside__navigation li a:hover {
-  color: #fff;
-  background: #293541;
-  box-shadow: inset 5px 0 #5f8ee4;
-  background-image: linear-gradient(#293541,#293541);
+  color: rgba(0,0,0,.8);
+  background: #dde0e6;
+  box-shadow: inset 5px 0 #71a6f6;
 }
 
 
@@ -103,7 +130,7 @@ main {
 .element__title {
   padding: 0 0 10px;
   font-size: 50px;
-  margin: 70px 0 30px;
+  margin: 0px 0 30px;
   font-weight: 200;
   border-bottom: 1px solid #e0e8ef;
 }
