@@ -22,12 +22,10 @@
   <link rel="stylesheet" href="./assets/template/css/main.css" />
   <!-- highlight CSS -->
   <link rel="stylesheet" href="./assets/template/css/github.css" />
+  <!-- Octicon -->
+    <link rel="stylesheet" href="./assets/template/css/octicons.css">
 </head>
 <body>
-
-<header>
-  test
-</header>
 
 <div class="wrapper" am-dashboard-wrapper>
 
@@ -55,6 +53,17 @@
 
 <!-- main -->
 <main am-dashboard-main>
+
+  <div class="main__header">
+
+    <div am-menu-hamburger class="header__menu"><span></span></div>
+    <div class="header__github">
+      <a href="https://github.com/sotayamashita/bdash" target="_blank">
+        <span class="octicon octicon-mark-github"></span>
+        <span class="octicon octicon-logo-github"></span>
+      </a>
+    </div>
+  </div>
 
   <div class="main__content">
     <h1 class="element__title" id="button">Button</h1>
