@@ -124,16 +124,23 @@ main {
   float: left
 }
 
-.main__header [am-menu-hamburger] {
+.main__header .header__menu {
+  transition: visibility .4s;
+  visibility: hidden;
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.main__header [am-menu-hamburger] span {
+.main__header .header__menu span {
   top: 50%;
   left: 50%;
   margin-left: -9px;
+}
+
+[am-menu-hamburger="active"] span:before,
+[am-menu-hamburger="active"] span:after {
+  background-color: black;
 }
 
 .main__header .header__github {
@@ -286,5 +293,9 @@ main::-webkit-scrollbar-thumb {
 @media (max-width: 991px) {
   .main__header {
     padding: 15px 20px !important
+  }
+
+  .main__header .header__menu {
+    visibility: visible !important;
   }
 }
