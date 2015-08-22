@@ -1,10 +1,14 @@
-/* border-color: #e0e8ef; */
-/* background: #f1f4f8 */
-/* black: */
+/*------------------------------------*\
+    $TEMPLATE
+\*------------------------------------*/
 
-/**
- * Body
- */
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
 body {
   font-size: 16px;
   color: #44525a;
@@ -12,37 +16,79 @@ body {
   background: #DDE0E6;
 }
 
-/**
- * Wrapper
- */
+
+
+
+
+/*------------------------------------*\
+    #WRAPPER
+\*------------------------------------*/
 .wrapper {
   margin: 0 auto
 }
 
-/**
- * aside
- */
+
+
+
+
+/*------------------------------------*\
+    #ASIDE
+\*------------------------------------*/
 aside {
   background: #F1F4F8;
   border-right: 1px solid #e0e8ef;
 }
 
+.aside__header {
+  color: black;
+  font-size: 32px;
+  padding: 0 20px;
+}
+
+.aside__header span {
+  color: #AEAEAE;
+  position: relative;
+  top: -30px;
+  font-size: 11px;
+}
+
 /* Content */
 .aside__content {
-  padding: 50px 0;
+  padding: 20px;
 }
 
 .aside__navigation h3 {
-  padding: 5px 0px 5px 30px;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 5px 0px 5px 20px;
+  font-size: 16px;
+  font-weight: 200;
   color: #666;
 }
 
+.aside__navigation {
+  overflow-y: scroll;
+  height: 500px;
+}
+.aside__navigation li a {
+  display: block;
+  padding: 3px 48px 3px 20px;
+  color: #AEAEAE;
+  font-weight: 200;
+}
 
-/**
- * Main
- */
+.aside__navigation li a:hover {
+  color: rgba(0,0,0,.8);
+  background: #71a6f6;
+  color: #fff;
+  border-radius: .25em;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #MAIN
+\*------------------------------------*/
 main {
 
 }
@@ -50,13 +96,25 @@ main {
 /* Header */
 .main__header {
   height: 50px;
-  padding: 20px 30px;
+  padding: 20px 20px;
   background: #fff;
   border-bottom: 1px solid #e0e8ef;
 }
 
 .main__header .header__menu {
   float: left
+}
+
+.main__header [am-menu-hamburger] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.main__header [am-menu-hamburger] span {
+  top: 50%;
+  left: 50%;
+  margin-left: -9px;
 }
 
 .main__header .header__github {
@@ -80,7 +138,7 @@ main {
 /* Content */
 .main__content{
   background: #fff;
-  padding: 50px 30px 20px;
+  padding: 50px 20px 20px;
   max-width: 1000px;
   overflow-x: hidden;
 }
@@ -99,20 +157,15 @@ main {
   border-bottom:    1px solid #DADADA;
   height: 60px;
 }
+
 .main__footer {
   border-top:    1px solid #DADADA;
-  padding: 20px 30px 40px;
+  padding: 20px 20px 30px;
+  background: #fff;
 }
 
-
-
-
-/**
- * Footer
- */
 .main__footer__sitemap {
   list-style-type: none;
-  float: left;
 }
 
 .main__footer__sitemap li {
@@ -120,35 +173,33 @@ main {
   margin-right: 10px;
 }
 
-.main__footer__copyright {
-  float: right;
-}
 
 
-/**
- * Aside navigation
- */
-.aside__navigation {
-  overflow-y: scroll;
-  height: 500px;
-}
-.aside__navigation li a {
-  display: block;
-  padding: 4px 48px 4px 30px;
-  color: #AEAEAE;
+
+
+/*------------------------------------*\
+    #SCROLL
+\*------------------------------------*/
+main::-webkit-scrollbar {
+    width: 5px;
 }
 
-.aside__navigation li a:hover {
-  color: rgba(0,0,0,.8);
-  background: #dde0e6;
-  box-shadow: inset 5px 0 #71a6f6;
+main::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+main::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #acafb2;
 }
 
 
 
-/**
- * Elements
- */
+
+
+/*------------------------------------*\
+    #ELEMENTS
+\*------------------------------------*/
 .element__title {
   padding: 0 0 10px;
   font-size: 50px;
@@ -175,7 +226,7 @@ main {
   background: #f1f4f8;
   position: relative;
   width: 60px;
-  top: -1px;
+  top: -3px;
   left: -1px;
   padding: 2px;
   letter-spacing: .5px;
@@ -214,4 +265,3 @@ main {
   padding: 16px;
   font-size: 14px;
 }
-
