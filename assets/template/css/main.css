@@ -7,6 +7,24 @@
 
 
 /*------------------------------------*\
+    $CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
+ * and over in your markup.
+ */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/*------------------------------------*\
     #BASE
 \*------------------------------------*/
 body {
@@ -95,10 +113,11 @@ main {
 
 /* Header */
 .main__header {
-  height: 50px;
   padding: 20px 20px;
   background: #fff;
   border-bottom: 1px solid #e0e8ef;
+  transform: translateZ(0);
+  transition: transform .4s;
 }
 
 .main__header .header__menu {
@@ -152,10 +171,6 @@ main {
   margin-top: 10px;
   display: block;
   color: #fff;
-}
-.main__header {
-  border-bottom:    1px solid #DADADA;
-  height: 60px;
 }
 
 .main__footer {
@@ -264,4 +279,12 @@ main::-webkit-scrollbar-thumb {
   background: #f1f4f8;
   padding: 16px;
   font-size: 14px;
+}
+
+
+
+@media (max-width: 991px) {
+  .main__header {
+    padding: 15px 20px !important
+  }
 }
