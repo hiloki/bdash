@@ -1,29 +1,20 @@
-/* border: 1px solid #e0e8ef; */
+/* border-color: #e0e8ef; */
 /* background: #f1f4f8 */
-/* color: */
+/* black: */
 
 /**
  * Body
  */
 body {
-  font-size: 14px;
+  font-size: 16px;
   color: #44525a;
   line-height: 1.5;
   background: #DDE0E6;
 }
 
-
 /**
- * Header
+ * Wrapper
  */
-header {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background: red;
-  z-index: 9999;
-}
-
 .wrapper {
   margin: 0 auto
 }
@@ -36,10 +27,10 @@ aside {
   border-right: 1px solid #e0e8ef;
 }
 
+/* Content */
 .aside__content {
   padding: 50px 0;
 }
-
 
 .aside__navigation h3 {
   padding: 5px 0px 5px 30px;
@@ -56,6 +47,37 @@ main {
 
 }
 
+/* Header */
+.main__header {
+  height: 50px;
+  padding: 20px 30px;
+  background: #fff;
+  border-bottom: 1px solid #e0e8ef;
+}
+
+.main__header .header__menu {
+  float: left
+}
+
+.main__header .header__github {
+  float: right;
+}
+
+.main__header .header__github a {
+  color: #AEAEAE;
+}
+
+.main__header .header__github a:hover {
+  color: black;
+}
+
+.main__header .octicon-mark-github {
+  position: relative;
+  margin-right: 3px;
+  top: -2px;
+}
+
+/* Content */
 .main__content{
   background: #fff;
   padding: 50px 30px 20px;
