@@ -1,1 +1,37 @@
-//http://codyhouse.co/gem/css-contact-form/
+/**
+ * <input am-form-text type="text"/>
+ https://css-tricks.com/snippets/css/glowing-blue-input-highlights/
+ */
+[am-form-control]
+  transition: border .3s ease-in-out
+  border: 1px solid #c0cbd4
+  outline: none
+  background: #fff
+  border-radius: .25em
+  padding: 6px 12px
+  height: 34px
+  width: 100%
+  color: #555
+
+[am-form-control]:focus
+  border: 1px solid #0086b3
+
+[am-form-control] input-placeholder
+  color: #C4C4C4
+
+
+[am-form-group]
+  padding: 10px 0
+
+[am-form-group] label
+  display: inline-block
+  width: 140px
+  text-align: right
+  margin-right: 20px
+  position: relative
+  top: 2px
+
+[am-form-group] input
+  border: 1px solid #c0cbd4
+  border-radius: .25em
+  width: calc(100% - 164px)
