@@ -234,6 +234,7 @@ main::-webkit-scrollbar-thumb {
 .element-example__title {
   font-size: 18px;
   margin: 20px 0 10px;
+  font-weight: 200;
 }
 
 .code-example {

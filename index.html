@@ -23,11 +23,14 @@
   <!-- highlight CSS -->
   <link rel="stylesheet" href="./assets/template/css/github.css" />
   <!-- Octicon -->
-    <link rel="stylesheet" href="./assets/template/css/octicons.css">
+  <link rel="stylesheet" href="./assets/template/css/octicons.css">
 </head>
 <body>
 
+
+<!-- wrapper -->
 <div class="wrapper" am-dashboard-wrapper>
+
 
 <!-- aside -->
 <aside am-dashboard-aside>
@@ -54,23 +57,19 @@
   </div>
 </aside>
 
+
 <!-- main -->
 <main am-dashboard-main>
-
   <div class="main__header cf">
-
     <div am-menu-hamburger class="header__menu"><span></span></div>
     <div class="header__github">
       <a href="https://github.com/sotayamashita/bdash" target="_blank">
         <span class="octicon octicon-mark-github"></span>
+        View on
         <span class="octicon octicon-logo-github"></span>
       </a>
     </div>
   </div>
-
-
-
-
 
   <div class="main__content">
     <h1 class="element__title" id="button">Button</h1>
@@ -95,7 +94,6 @@
     <div class="element">
       <h2 class="element-example__title">Solid Button</h2>
       <p class="element-example__description">
-        Solid button
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -111,7 +109,6 @@
     <div class="element">
       <h2 class="element-example__title">Fill Button</h2>
       <p class="element-example__description">
-
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -127,7 +124,6 @@
     <div class="element">
       <h2 class="element-example__title">Solid Buttons</h2>
       <p class="element-example__description">
-
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -149,7 +145,6 @@
     <div class="element">
       <h2 class="element-example__title">Fill Buttons</h2>
       <p class="element-example__description">
-        Fill buttons function
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -171,7 +166,6 @@
     <div class="element">
       <h2 class="element-example__title">Soft Button</h2>
       <p class="element-example__description">
-        Fill buttons style
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -187,7 +181,6 @@
     <div class="element">
       <h2 class="element-example__title">Hard Buttons</h2>
       <p class="element-example__description">
-        Fill buttons hard
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -205,9 +198,8 @@
 
     <h1 class="element__title" id="pagination">Pagination</h1>
     <div class="element">
-      <h2 class="element-example__title">Pegination</h2>
+      <h2 class="element-example__title">Base Pegination</h2>
       <p class="element-example__description">
-        pagination
       </p>
     </div><!-- .element -->
 
@@ -238,7 +230,6 @@
     <div class="element">
       <h2 class="element-example__title">Hamburger menu</h2>
       <p class="element-example__description">
-        Hamburger menu
       </p>
     </div><!-- .element -->
 
@@ -260,7 +251,6 @@
     <div class="element">
       <h2 class="element-example__title">base switch</h2>
       <p class="element-example__description">
-        base switch
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -282,7 +272,6 @@
     <div class="element">
       <h2 class="element-example__title">Round switch</h2>
       <p class="element-example__description">
-        Round switch
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -302,12 +291,94 @@
 
 
 
+    <h1 class="element__title" id="table">Table</h1>
+    <div class="element">
+      <h2 class="element-example__title">Base Table</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <table am-table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Actor</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>R2-D2</td>
+              <td>Kenny Baker</td>
+              <td>Droids</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>C-3PO</td>
+              <td>Anthony Daniels</td>
+              <td>Droids</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;table am-table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ID&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Actor&lt;/th&gt;
+      &lt;th&gt;Type&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;R2-D2&lt;/td&gt;
+      &lt;td&gt;Kenny Baker&lt;/td&gt;
+      &lt;td&gt;Droids&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;C-3PO&lt;/td&gt;
+      &lt;td&gt;Anthony Daniels&lt;/td&gt;
+      &lt;td&gt;Droids&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+
+    <h1 class="element__title" id="loading">Loading</h1>
+    <div class="element">
+      <h2 class="element-example__title">Circle Loading</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div am-loader="circle">Loading...</div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;div am-loader="circle"&gt;Loading...&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
 
     <h1 class="element__title" id="tabnav">Tab navigation</h1>
     <div class="element">
-      <h2 class="element-example__title">Input text</h2>
+      <h2 class="element-example__title">Base Tab Navigation</h2>
       <p class="element-example__description">
-        input text
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -337,9 +408,8 @@
     <h1 class="element__title" id="form">Forms</h1>
 
     <div class="element">
-      <h2 class="element-example__title">Input text</h2>
+      <h2 class="element-example__title">Base input</h2>
       <p class="element-example__description">
-        input text
       </p>
     </div><!-- .element -->
     <div class="code-example">
@@ -364,7 +434,6 @@
      <div class="element">
       <h2 class="element-example__title">Dashboard</h2>
       <p class="element-example__description">
-        dashboard
       </p>
     </div><!-- .element -->
     <div class="code-example">
