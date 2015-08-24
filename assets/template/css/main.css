@@ -150,6 +150,7 @@ main {
 
 .main__header .header__github a {
   color: #AEAEAE;
+  transition: color 0.25s ease-in-out 0s
 }
 
 .main__header .header__github a:hover {
