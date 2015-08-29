@@ -18,7 +18,6 @@ gulp.task 'style', ->
   gulp.src './stylus/bdash.styl'
   .pipe do $.sourcemaps.init
   .pipe do $.stylus
-  .pipe do $.csscomb
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
   .pipe $.sourcemaps.write()
   .pipe $.size {title:  'style'}
@@ -29,7 +28,6 @@ gulp.task 'style:docs', ->
   gulp.src './stylus/bdash.styl'
   .pipe do $.sourcemaps.init
   .pipe do $.stylus
-  .pipe do $.csscomb
   .pipe $.autoprefixer(AUTOPREFIXER_BROWSERS)
   .pipe do $.minifyCss
   .pipe $.sourcemaps.write('.')
