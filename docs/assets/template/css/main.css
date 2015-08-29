@@ -17,6 +17,8 @@
 
 
 
+
+
 /*------------------------------------*\
     $CLEARFIX
 \*------------------------------------*/
@@ -290,8 +292,8 @@ main::-webkit-scrollbar-thumb {
   background: #f1f4f8;
   padding: 16px;
   font-size: 14px;
+  word-wrap: break-word;
 }
-
 
 
 @media (max-width: 991px) {
