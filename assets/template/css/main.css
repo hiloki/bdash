@@ -1,8 +1,19 @@
 /*------------------------------------*\
     $TEMPLATE
 \*------------------------------------*/
-
-
+/**
+ * Fonts
+ * base - 16px
+ *
+ * Colors
+ * theme #71a6f6
+ * black #44525a
+ * border 1px solid #e0e8ef
+ * background #DDE0E6
+ *
+ * Border
+ * radius .25em
+ */
 
 
 
@@ -58,22 +69,29 @@ aside {
   border-right: 1px solid #e0e8ef;
 }
 
+.aside__header {
+  height: 60px;
+  margin-bottom: 39px;
+}
+
 .aside__header a {
-  color: black;
+  color: #44525a;
   font-size: 32px;
   padding: 0 20px;
+  position: relative;
 }
 
 .aside__header a:hover {
-  opacity: .7;
+  color: #71a6f6;
 }
 
 .aside__header span {
   color: #AEAEAE;
-  position: relative;
-  top: -30px;
+  position: absolute;
+  top: 34px;
   left: 20px;
   font-size: 11px;
+  width: 100%;
 }
 
 /* Content */
@@ -85,7 +103,7 @@ aside {
   padding: 5px 0px 5px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #666;
+  color: #44525a;
 }
 
 .aside__navigation {
@@ -113,14 +131,17 @@ aside {
 /*------------------------------------*\
     #MAIN
 \*------------------------------------*/
-main {
-
+/* Header */
+.main__header,
+.main__content,
+.main__footer {
+  overflow-x: hidden;
+  background: #fff;
+  max-width: 1000px;
 }
 
-/* Header */
 .main__header {
   padding: 20px 20px;
-  background: #fff;
   border-bottom: 1px solid #e0e8ef;
   transform: translateZ(0);
   transition: transform .4s;
@@ -146,7 +167,7 @@ main {
 
 [am-menu-hamburger="active"] span:before,
 [am-menu-hamburger="active"] span:after {
-  background-color: black;
+  background-color: #44525a;
 }
 
 .main__header .header__github {
@@ -159,7 +180,7 @@ main {
 }
 
 .main__header .header__github a:hover {
-  color: black;
+  color: #44525a;
 }
 
 .main__header .octicon-mark-github {
@@ -170,10 +191,7 @@ main {
 
 /* Content */
 .main__content{
-  background: #fff;
   padding: 50px 20px 20px;
-  max-width: 1000px;
-  overflow-x: hidden;
 }
 
 
@@ -188,9 +206,8 @@ main {
 }
 
 .main__footer {
-  border-top:    1px solid #DADADA;
+  border-top: 1px solid #e0e8ef;
   padding: 20px 20px 30px;
-  background: #fff;
 }
 
 .main__footer__sitemap {
@@ -209,10 +226,6 @@ main {
 /*------------------------------------*\
     #SCROLL
 \*------------------------------------*/
-aside {
-  overflow: auto;
-}
-
 main::-webkit-scrollbar {
     width: 5px;
 }
@@ -248,7 +261,7 @@ main::-webkit-scrollbar-thumb {
 
 .code-example {
   border: 1px solid #e0e8ef;
-  border-radius: 3px;
+  border-radius: .25em;
   margin: 10px 0 50px;
 }
 
