@@ -218,3 +218,29 @@
 
 [am-button~="small"]
   padding: 5px 10px;
+
+
+
+
+
+/*------------------------------------*\
+    #BTN-GROUP
+\*------------------------------------*/
+[am-button-group]
+  font-size: 0
+
+  [am-button]
+    border-radius: 0
+
+  [am-button]:first-child
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+
+  [am-button]:last-child
+      border-top-right-radius: 3px
+      border-bottom-right-radius: 3px
+
+  // default:fill and default:solid
+  [am-button~="default:fill"]:not(:last-child),
+  [am-button~="default:solid"]:not(:last-child)
+    border-right: 0
