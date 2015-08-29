@@ -6,9 +6,9 @@
 [![npm package][npm-badge]][npm-pkg-link]
 [![][mit-badge]][mit]
 
-The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. It aims to make our development be fast and maintainable.
+The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer] by GitHub. Our aims to make our development be fast and maintainable.
 
- :sparkles: **We love Open Source** :v:. we are always welcome your suggestion but it is our internal CSS toolkit. we will not add new features we do not use in our products but we think seriously about your suggesiton. If your suggesiton is considering exisiting code, it will be better. Thanks in advance. Lean more about [CONTRIBUTING](#contributing).
+:sparkles: **We love Open Source** :v:. we are always welcome your suggestion but it is our internal CSS toolkit. we will not add new features we do not use in our products but we think seriously about your suggesiton. If your suggesiton is considering exsisting code, it will be better. Thanks in advance. Lean more about [CONTRIBUTING](#contributing).
 
 ## Table of contents
 
@@ -62,11 +62,9 @@ Specify relationships between the current document and CSS below:
 
 ## Documentation
 
-**Wiki**
+Document is summarized in [Wiki](https://github.com/sotayamashita/bdash/wiki). We are taking note to go through the process of this and understand reasons for selecting technique.
 
-At this stage, docs is located in [Wiki](https://github.com/sotayamashita/bdash/wiki). I am taking note to go through the process of this and understand reasons for selecting technique.
-
-If you have any question or suggestion, please feel free to create issues or pull request. When you create issues or pull request, please read [Contributing](CONTRIBUTING.md) before.
+_Note: Some Document in Wiki is written in Japanese. It is for people at SIROK, Inc._
 
 ## Updating
 
@@ -84,7 +82,7 @@ $ bower update
 
 ## Contributing
 
-Contributions are very welcome! Please have a look at [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
+If you have any question or suggestion, please feel free to create issues or pull request. When you create issues or pull request, please read [Contributing](CONTRIBUTING.md) before.
 
 ## Versioning
 
@@ -94,13 +92,13 @@ For transparency into our release cycle and in striving to maintain backward com
 
 [MIT][mit] © [SIROK, Inc][sirok].
 
-Whenever code for bdash is borrowed or inspired by existing code, we try to credit the original developer/designer in our code. Please create [issues][issue] if you think any credit is absent.
+Whenever code for bdash is borrowed or inspired by existing code, we credit the original developer, designer or article in our code. Please create [issues][issue] if you think any credit is absent.
 
 ## About SIROK, Inc.
 
 [<img src="http://sirok.co.jp/wordpress/wp-content/themes/sirokco_v2.1/svg/bgWhite/logo.svg"  width="240">][sirok]
 
-bdash is maintained and funded by SIROK, Inc. The names and logos are trademarks of SIROK, Inc.
+bdash is maintained and funded by SIROK, Inc. The names and logos are trademarks of us.
 
 [sirok]:          http://sirok.co.jp/
 [mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
