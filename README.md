@@ -13,7 +13,6 @@ The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer
 ## Table of contents
 
 * [Installation](#installation)
-* [What's included in Stylus](#whats-included-in-stylus)
 * [Usage](#usage)
 * [Documentation](#documentation)
 * [Updating](#updating)
@@ -21,7 +20,7 @@ The bdash is a CSS toolkit of SIROK, Inc. It is very inspired by [Primer][primer
 * [Contributing](#contributing)
 * [Versioning](#versioning)
 * [License](#license)
-* [About SIROK, Inc.](#about-sirok-inc) 
+* [About SIROK, Inc.](#about-sirok-inc)
 
 ## Installation
 
@@ -36,25 +35,6 @@ $ bower install bdash --save-dev
 ```bash
 $ npm install bdash --save-dev
 ```
-
-## What's included in Stylus
-
-In the stylus directories you'll find the following files:
-
-| Files         | Provides                    |
-| ------------- | --------------------------- |
-| _variables    | Global variables            |
-| _mixins       | Default mixins              |
-| _sanitize     | Reset style                 |
-| _base         | Unclassed HTML Elements     |
-| _buttons      | Buttons                     |
-| _code         | Code                        |
-| _dashboard    | Responsive dashboard layout |
-| _pagination   | Pagination                  |
-| _table        | Table                       |
-| _tabnav       | Tab navigation              |
-| bdash         |                             |
-
 
 ## Usage
 
