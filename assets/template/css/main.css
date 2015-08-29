@@ -64,6 +64,10 @@ aside {
   padding: 0 20px;
 }
 
+.aside__header a:hover {
+  opacity: .7;
+}
+
 .aside__header span {
   color: #AEAEAE;
   position: relative;
