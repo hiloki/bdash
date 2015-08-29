@@ -46,7 +46,7 @@ Import files in your project using `@import` without the extension below:
 // Example: All files
 @import "bdash/stylus/bdash"
 
-// Exameple: Individual file
+// Example: Individual file
 @import "bdash/stylus/_sanitize"
 @import "bdash/stylus/_base"
 @import "bdash/stylus/_buttons"
