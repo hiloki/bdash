@@ -3,8 +3,6 @@
  * https://github.com/feross/standard
  */
 !(function () {
-  if ( isChrome() ) { document.body.classList.add('chrome') }
-
   var styles = {
     common: 'font-weight: bold; color: #44525a; font-size: 14px;',
     emoji: function (emoji) {
@@ -20,10 +18,12 @@
   console.log('%c' + messages.code + '%c  ', styles.common, styles.emoji('octocat'))
   console.log('%c' + messages.join + '%c  ', styles.common, styles.emoji('door'))
 
+
+  // サイドバーメニュー
   var menu = document.querySelector('.header__menu')
   var main = document.querySelector('main')
-
-  menu.addEventListener('click', function(){
+  menu.addEventListener('click', function(e){
+    e.preventDefault()
     // 属性値があれば
     if (menu.hasAttributes()) {
       var a = menu.attributes[0]
@@ -36,11 +36,8 @@
       }
     }
   })
-}())
 
-function isChrome () {
-  return navigator.userAgent.toLowerCase().indexOf('chrome') > -1
-}
+}())
 
 /**
  * Redirect recruitment page
