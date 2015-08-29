@@ -46,7 +46,7 @@
         <li><a href="#menu">Menu</a></li>
         <li><a href="#switch">Switch</a></li>
         <li><a href="#form">Form</a></li>
-        <!-- <li><a href="#popup">Popup</a></li> -->
+        <li><a href="#label">Label</a></li>
         <li><a href="#table">Table</a></li>
         <li><a href="#loading">Loading</a></li>
         <li><a href="#tabnav">Tab Navigation</a></li>
@@ -267,6 +267,26 @@
 
 
 
+    <h1 class="element__title" id="label">Label</h1>
+    <div class="element">
+      <h2 class="element-example__title">Base label</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+
+    <div class="code-example">
+      <div class="code-example__output">
+        <div>Label<span am-label>?</span></div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div&gt;Label&lt;span am-label&gt;?&lt;/span&gt;&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+
     <h1 class="element__title" id="menu">Menu</h1>
     <div class="element">
       <h2 class="element-example__title">Hamburger menu</h2>
@@ -347,6 +367,7 @@
               <th>Name</th>
               <th>Actor</th>
               <th>Type</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -355,12 +376,14 @@
               <td>R2-D2</td>
               <td>Kenny Baker</td>
               <td>Droids</td>
+              <td><button am-button="danger:fill">Remove</button></td>
             </tr>
             <tr>
               <td>2</td>
               <td>C-3PO</td>
               <td>Anthony Daniels</td>
               <td>Droids</td>
+              <td><button am-button="danger:fill">Remove</button></td>
             </tr>
           </tbody>
         </table>
@@ -373,6 +396,7 @@
       &lt;th&gt;Name&lt;/th&gt;
       &lt;th&gt;Actor&lt;/th&gt;
       &lt;th&gt;Type&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -381,12 +405,14 @@
       &lt;td&gt;R2-D2&lt;/td&gt;
       &lt;td&gt;Kenny Baker&lt;/td&gt;
       &lt;td&gt;Droids&lt;/td&gt;
+      &lt;td&gt;&lt;button am-button="danger:fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;C-3PO&lt;/td&gt;
       &lt;td&gt;Anthony Daniels&lt;/td&gt;
       &lt;td&gt;Droids&lt;/td&gt;
+      &lt;td&gt;&lt;button am-button="danger:fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
