@@ -1,9 +1,9 @@
 Contributing
 ============================
 
-1. Fork & clone this porject
+1. Fork & clone this project
 2. Create a topic branch from `develop` branch
-3. :sparkles: Happy hacking 
+3. :sparkles: Happy hacking
 4. Send a pull request
 
 ## Git Commit Messages
