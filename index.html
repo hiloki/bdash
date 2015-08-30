@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" >
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -390,6 +390,79 @@
       </div><!-- .code-example__output -->
       <div class="code-example__block">
       <pre><code class="hljs html">&lt;table am-table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ID&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Actor&lt;/th&gt;
+      &lt;th&gt;Type&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;R2-D2&lt;/td&gt;
+      &lt;td&gt;Kenny Baker&lt;/td&gt;
+      &lt;td&gt;Droids&lt;/td&gt;
+      &lt;td&gt;&lt;button am-button="danger:fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;C-3PO&lt;/td&gt;
+      &lt;td&gt;Anthony Daniels&lt;/td&gt;
+      &lt;td&gt;Droids&lt;/td&gt;
+      &lt;td&gt;&lt;button am-button="danger:fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+    <div class="element">
+      <h2 class="element-example__title">Striped Table</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <table am-table="striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Actor</th>
+              <th>Type</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>R2-D2</td>
+              <td>Kenny Baker</td>
+              <td>Droids</td>
+              <td><button am-button="danger:fill">Remove</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>C-3PO</td>
+              <td>Anthony Daniels</td>
+              <td>Droids</td>
+              <td><button am-button="danger:fill">Remove</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>BB8</td>
+              <td>unknow</td>
+              <td>Droids</td>
+              <td><button am-button="danger:fill">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;table am-table="striped"&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;ID&lt;/th&gt;
