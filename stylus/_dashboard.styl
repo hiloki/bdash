@@ -23,6 +23,8 @@
 
 [am-dashboard-aside]
   position: absolute
+  // Hack:
+  // iOS Safari scrolling causes HTML elements with a delay
   transform: translate3d(0,0,0)
   top: 0
   left: 0
@@ -32,8 +34,9 @@
 
 [am-dashboard-main]
   position: relative
+  // Hack:
+  // iOS Safari scrolling causes HTML elements with a delay
   transform: translate3d(0,0,0)
   float: right
   top: 0
   width: calc(100% - 210px)
-  // transition: all .3s linear
