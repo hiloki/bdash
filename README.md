@@ -99,7 +99,7 @@ Whenever code for bdash is borrowed or inspired by existing code, we credit the 
 bdash is maintained and funded by SIROK, Inc. The names and logos are trademarks of us.
 
 [sirok]:          http://sirok.co.jp/
-[mit]:            https://github.com/SIROK/bdash/blob/master/LICENSE
+[mit]:            https://github.com/SIROK/bdash/blob/master/LICENSE.md
 [mit-badge]:      https://img.shields.io/github/license/SIROK/bdash.svg?style=flat-square
 [releases]:       https://github.com/SIROK/bdash/releases
 [npm-pkg-link]:   https://www.npmjs.org/package/bdash
