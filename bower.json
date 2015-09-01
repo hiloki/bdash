@@ -1,9 +1,9 @@
 {
   "name": "bdash",
-  "version": "0.0.5",
-  "homepage": "https://github.com/sotayamashita/bdash",
+  "version": "1.0.0",
+  "homepage": "https://github.com/SIROK/bdash",
   "authors": [
-    "Sota Yamashita <sota.yamashita@gmail.com>"
+    "SIROK, Inc. < developer@sirok.co.jp>"
   ],
   "description": "the base coat of SIROK",
   "keywords": [

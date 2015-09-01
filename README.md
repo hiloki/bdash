@@ -1,7 +1,5 @@
 > The internal CSS toolkit of SIROK, Inc.
 
-[![Join the chat at https://gitter.im/sotayamashita/bdash](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sotayamashita/bdash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Wercker][wercker-badge]][releases]
 [![bower package][bower-badge]][releases]
 [![npm package][npm-badge]][npm-pkg-link]
 [![][mit-badge]][mit]
@@ -62,7 +60,7 @@ Specify relationships between the current document and CSS below:
 
 ## Documentation
 
-Document is summarized in [Wiki](https://github.com/sotayamashita/bdash/wiki). We are taking note to go through the process of this and understand reasons for selecting technique.
+Document is summarized in [Wiki](https://github.com/SIROK/bdash/wiki). We are taking note to go through the process of this and understand reasons for selecting technique.
 
 _Note: Some Document in Wiki is written in Japanese. It is for people at SIROK, Inc._
 
@@ -101,13 +99,13 @@ Whenever code for bdash is borrowed or inspired by existing code, we credit the 
 bdash is maintained and funded by SIROK, Inc. The names and logos are trademarks of us.
 
 [sirok]:          http://sirok.co.jp/
-[mit]:            https://github.com/sotayamashita/bdash/blob/master/LICENSE
-[mit-badge]:      https://img.shields.io/github/license/sotayamashita/bdash.svg?style=flat-square
-[releases]:       https://github.com/sotayamashita/bdash/releases
+[mit]:            https://github.com/SIROK/bdash/blob/master/LICENSE
+[mit-badge]:      https://img.shields.io/github/license/SIROK/bdash.svg?style=flat-square
+[releases]:       https://github.com/SIROK/bdash/releases
 [npm-pkg-link]:   https://www.npmjs.org/package/bdash
 [npm-badge]:      https://img.shields.io/npm/v/bdash.svg?style=flat-square
 [bower-badge]:    https://img.shields.io/bower/v/bdash.svg?style=flat-square
 [wercker-badge]:  https://img.shields.io/wercker/ci/wercker/docs.svg?style=flat-square
 [dl-badge]:       http://img.shields.io/npm/dm/bdash.svg?style=flat-square
 [primer]:         https://github.com/primer/primer
-[issue]:          https://github.com/sotayamashita/bdash/issues
+[issue]:          https://github.com/SIROK/bdash/issues
