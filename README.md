@@ -17,7 +17,7 @@
   |
   <b><a href="#usage">Usage</a></b>
   |
-  <b><a href="#documentation">Documentation</a></b>
+  <b><a href="#document">Document</a></b>
   |
   <b><a href="#updating">Updating</a></b>
 </p>
@@ -70,7 +70,7 @@ Specify relationships between the current document and CSS below:
 ```
 
 
-## Documentation
+## Document
 
 Document is summarized in [Wiki](https://github.com/SIROK/bdash/wiki). We are taking note to go through the process of this and understand reasons for selecting technique.
 
