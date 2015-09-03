@@ -94,5 +94,6 @@ Whenever code for bdash is borrowed or inspired by awesome existing sources, we 
 [bower-badge]:    https://img.shields.io/bower/v/bdash.svg?style=flat-square
 [bower-pkg-link]: http://bower.io/search/?q=bdash
 [wercker-badge]:  https://img.shields.io/wercker/ci/sirok/bdash.svg?style=flat-square
+[wercker-link]:   https://app.wercker.com/status/02fdd17db7d60cbf794e642b6895719a/s/master 
 [primer]:         https://github.com/primer/primer
 [issue]:          https://github.com/SIROK/bdash/issues
