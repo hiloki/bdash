@@ -2,4 +2,3 @@ box: nodesource/trusty
 build:
     steps:
         - npm-install
-        - npm run build
