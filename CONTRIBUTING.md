@@ -71,6 +71,10 @@ _Note: this example was taken from [How to Write a Git Commit Message](http://ch
 
 * Don't end the summary line with a period
 
+## About `css` and `docs` directories
+
+We are prepared a script, `npm run build` to generate CSS for itself and docs. If you run the script, it will update both Regardless of whether there is no change so when you push them, please use `npm run css` and `npm run docs` script. 
+
 ## Acknowledgement
 
 Inspiration and idea was taken from many sources, including:
